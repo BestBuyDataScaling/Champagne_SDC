@@ -1,9 +1,8 @@
-const mockData = [
+const data = [
   {
     uniqueID: 1,
     name: 'Sony - PlayStation 4 1TB Console - Jet Black',
-    description: '
-    Battle friends and foes with the Sony PlayStation 4 Pro console. Its 1TB capacity lets you store plenty of games without an external hard drive, and the dual-shock controller improves your hands-on gaming experience. See enemies in clear, vibrant detail with the included HDMI cable of the Sony PlayStation 4 Pro console.',
+    description: 'Battle friends and foes with the Sony PlayStation 4 Pro console. Its 1TB capacity lets you store plenty of games without an external hard drive, and the dual-shock controller improves your hands-on gaming experience. See enemies in clear, vibrant detail with the included HDMI cable of the Sony PlayStation 4 Pro console.',
     brand: 'Sony',
     department: 'Video Games',
     color: 'Jet Black',
@@ -25,8 +24,7 @@ const mockData = [
   {
     uniqueID: 2,
     name: 'God of War - PlayStation Hits Standard Edition - PlayStation 4',
-    description: '
-    It is a new beginning for Kratos. Living as a man, outside the shadow of the gods, he seeks solitude in the unfamiliar lands of Norse mythology. With new purpose and his son Atreus at his side, Kratos must fight for survival as powerful forces threaten to disrupt the new life he has created...',
+    description: 'It is a new beginning for Kratos. Living as a man, outside the shadow of the gods, he seeks solitude in the unfamiliar lands of Norse mythology. With new purpose and his son Atreus at his side, Kratos must fight for survival as powerful forces threaten to disrupt the new life he has created...',
     brand: 'Santa Monica Studio',
     department: 'Video Games',
     color: '',
@@ -48,8 +46,7 @@ const mockData = [
   {
     uniqueID: 3,
     name: `Marvel's Spider-Man Game of the Year Edition - PlayStation 4`,
-    description: `
-    Experience the Game of the Year Edition of Marvel's Spider-Man, which includes the full game, plus Marvel's Spider-Man: The City That Never Sleeps complete DLC story arc content (Marvel's Spider-Man: The City That Never Sleeps DLC content provided via voucher code to download content. Voucher expires August 28, 2022).`,
+    description: `Experience the Game of the Year Edition of Marvel's Spider-Man, which includes the full game, plus Marvel's Spider-Man: The City That Never Sleeps complete DLC story arc content (Marvel's Spider-Man: The City That Never Sleeps DLC content provided via voucher code to download content. Voucher expires August 28, 2022).`,
     brand: 'Insomniac Games',
     department: 'Video Games',
     color: '',
@@ -68,7 +65,7 @@ const mockData = [
   {
     uniqueID: 4,
     name: 'Grand Theft Auto V: Premium Edition - PlayStation 4',
-    description: 'The Grand Theft Auto V: Premium Edition is available for PS4 and includes the complete Grand Theft Auto V story experience, the ever-evolving world of Grand Theft Auto Online, and all the existing gameplay upgrades and content, including The Doomsday Heist, Gunrunning, Smuggler's Run, Bikers and much more. You'll also get the Criminal Enterprise starter pack.',
+    description: 'The Grand Theft Auto V: Premium Edition is available for PS4 and includes the complete Grand Theft Auto V story experience, the ever-evolving world of Grand Theft Auto Online, and all the existing gameplay upgrades and content, including The Doomsday Heist, Gunrunning, Smuggler\'s Run, Bikers and much more. You\'ll also get the Criminal Enterprise starter pack.',
     brand: 'Rockstar Games',
     department: 'Video Games',
     color: '',
@@ -90,12 +87,7 @@ const mockData = [
   {
     uniqueID: 5,
     name: 'Red Dead Redemption 2 Standard Edition - PlayStation 4',
-    description: '
-    Winner of over 175 Game of the Year Awards and recipient of over 250 perfect scores, Red Dead Redemption 2 is an epic tale of honor and loyalty at the dawn of the modern age.
-    America, 1899.
-    Arthur Morgan and the Van der Linde gang are outlaws on the run. With federal agents and the best bounty hunters in the nation massing on their heels, the gang must rob, steal and fight their way across the rugged heartland of America in order to survive. As deepening internal divisions threaten to tear the gang apart, Arthur must make a choice between his own ideals and loyalty to the gang who raised him.
-    Now featuring additional Story Mode content and a fully-featured Photo Mode, Red Dead Redemption 2 also includes free access to the shared living world of Red Dead Online, where players take on an array of roles to carve their own unique path on the frontier as they track wanted criminals as a Bounty Hunter, create a business as a Trader, unearth exotic treasures as a Collector or run an underground distillery as a Moonshiner and much more.
-    This item cannot be returned or refunded, please visit to learn more.',
+    description: 'Winner of over 175 Game of the Year Awards and recipient of over 250 perfect scores, Red Dead Redemption 2 is an epic tale of honor and loyalty at the dawn of the modern age. America, 1899.Arthur Morgan and the Van der Linde gang are outlaws on the run. With federal agents and the best bounty hunters in the nation massing on their heels, the gang must rob, steal and fight their way across the rugged heartland of America in order to survive. As deepening internal divisions threaten to tear the gang apart, Arthur must make a choice between his own ideals and loyalty to the gang who raised him.Now featuring additional Story Mode content and a fully-featured Photo Mode, Red Dead Redemption 2 also includes free access to the shared living world of Red Dead Online, where players take on an array of roles to carve their own unique path on the frontier as they track wanted criminals as a Bounty Hunter, create a business as a Trader, unearth exotic treasures as a Collector or run an underground distillery as a Moonshiner and much more. This item cannot be returned or refunded, please visit to learn more.',
     brand: 'Rockstar Games',
     department: 'Video Games',
     color: '',
@@ -117,8 +109,7 @@ const mockData = [
   {
     uniqueID: 6,
     name: 'The Witcher 3: Wild Hunt Complete Edition - PlayStation 4',
-    description: `
-    Follow Geralt of Rivia's story through additional adventures in The Witcher 3: Wild Hunt, with access to both expansion packs in one neat little purchase. Download exclusive content including quests, armor and hairstyle sets. Embark on the final journey as Geralt discovers each of the three possible endings to the series in The Witcher 3: Wild Hunt.
+    description: `Follow Geralt of Rivia's story through additional adventures in The Witcher 3: Wild Hunt, with access to both expansion packs in one neat little purchase. Download exclusive content including quests, armor and hairstyle sets. Embark on the final journey as Geralt discovers each of the three possible endings to the series in The Witcher 3: Wild Hunt.
     `,
     brand: 'WB Games',
     department: 'Video Games',
@@ -141,8 +132,7 @@ const mockData = [
   {
     uniqueID: 7,
     name: `Assassin's Creed Odyssey Standard Edition - PlayStation 4`,
-    description: '
-    Write your own epic odyssey and become a legendary Spartan hero. Forge your destiny in a world on the brink of tearing itself apart. Influence how history unfolds in an ever-changing world shaped by your choices.',
+    description: 'Write your own epic odyssey and become a legendary Spartan hero. Forge your destiny in a world on the brink of tearing itself apart. Influence how history unfolds in an ever-changing world shaped by your choices.',
     brand: 'Ubisoft',
     department: 'Video Games',
     color: '',
@@ -186,8 +176,7 @@ const mockData = [
   {
     uniqueID: 9,
     name: 'Horizon Zero Dawn: Complete Edition - PlayStation 4',
-    description: '
-    Become Aloy in Horizon Zero Dawn Complete Edition for PlayStation4, and experience nature versus machine with stunning graphics. This RPG features an immersive storyline based on puzzling through the history of a post-apocalyptic world. Vibrant landscapes and cutting-edge technology collide in Horizon Zero Dawn Complete Edition, creating a memorable gaming experience.',
+    description: 'Become Aloy in Horizon Zero Dawn Complete Edition for PlayStation4, and experience nature versus machine with stunning graphics. This RPG features an immersive storyline based on puzzling through the history of a post-apocalyptic world. Vibrant landscapes and cutting-edge technology collide in Horizon Zero Dawn Complete Edition, creating a memorable gaming experience.',
     brand: 'Guerrilla Games',
     department: 'Video Games',
     color: '',
@@ -209,9 +198,7 @@ const mockData = [
   {
     uniqueID: 10,
     name: 'The Last of Us Part II Standard Edition - PlayStation 4',
-    description: '
-    Five years after their dangerous journey across the post-pandemic United States, Ellie and Joel have settled down in Jackson, Wyoming. Living amongst a thriving community of survivors has allowed them peace and stability, despite the constant threat of the infected and other, more desperate survivors. When a violent event disrupts that peace, Ellie embarks on a relentless journey to carry out justice and find closure. As she hunts those responsible one by one, she is confronted with the devastating physical and emotional repercussions of her actions.
-    ',
+    description: 'Five years after their dangerous journey across the post-pandemic United States, Ellie and Joel have settled down in Jackson, Wyoming. Living amongst a thriving community of survivors has allowed them peace and stability, despite the constant threat of the infected and other, more desperate survivors. When a violent event disrupts that peace, Ellie embarks on a relentless journey to carry out justice and find closure. As she hunts those responsible one by one, she is confronted with the devastating physical and emotional repercussions of her actions.',
     brand: 'Naughty Dog',
     department: 'Video Games',
     color: '',
@@ -233,8 +220,7 @@ const mockData = [
   {
     uniqueID: 11,
     name: 'Cyberpunk 2077 Standard Edition - PlayStation 4, PlayStation 5',
-    description: `
-    Cyberpunk 2077 is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamor, and body modification. You play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality. You can customize your character's cyberware, skill set, and playstyle, and explore a vast city where the choices you make shape the story and world around you.`,
+    description: `Cyberpunk 2077 is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamor, and body modification. You play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality. You can customize your character's cyberware, skill set, and playstyle, and explore a vast city where the choices you make shape the story and world around you.`,
     brand: 'WB Games',
     department: 'Video Games',
     color: '',
@@ -256,10 +242,8 @@ const mockData = [
   {
     uniqueID: 12,
     name: `Assassin's Creed Valhalla Standard Edition - PlayStation 4`,
-    description: `
-    Upgrade to PlayStation 5 Version: Assassin's Creed Valhalla PlayStation 4 game on Blu-Ray Disc must be kept inserted in a PlayStation 5 console to play the corresponding Assassin's Creed Valhalla PlayStation 5 digital version at no additional cost, when available.
-    Requires a PlayStation 5, the game Blu-Ray Disc, a PlayStation Network registration, additional storage & Broadband internet connection. May incur bandwidth usage fees.
-    Become Eivor, a legendary Viking raider on a quest for glory. Explore England's Dark Ages as you raid your enemies, grow your settlement, and build your political power.`,
+    description: `Upgrade to PlayStation 5 Version: Assassin's Creed Valhalla PlayStation 4 game on Blu-Ray Disc must be kept inserted in a PlayStation 5 console to play the corresponding Assassin's Creed Valhalla PlayStation 5 digital version at no additional cost, when available.
+    Requires a PlayStation 5, the game Blu-Ray Disc, a PlayStation Network registration, additional storage & Broadband internet connection. May incur bandwidth usage fees. Become Eivor, a legendary Viking raider on a quest for glory. Explore England's Dark Ages as you raid your enemies, grow your settlement, and build your political power.`,
     brand: 'Ubisoft',
     department: 'Video Games',
     color: '',
@@ -281,16 +265,15 @@ const mockData = [
   {
     uniqueID: 13,
     name: 'Microsoft - Xbox One S 1TB Console Bundle - White',
-    description: '
-    Unlock a world of endless gaming with this white Microsoft Xbox One S console. The 4K Ultra Blu-ray and 4K video streaming let you play and watch content in high definition, while the built-in Dolby Atmos and DTS:X audio deliver rich sounds during gameplay. This Microsoft Xbox One S console features entertainment apps for more entertainment, and the 1TB of storage offers ample space for games.',
+    description: 'Unlock a world of endless gaming with this white Microsoft Xbox One S console. The 4K Ultra Blu-ray and 4K video streaming let you play and watch content in high definition, while the built-in Dolby Atmos and DTS:X audio deliver rich sounds during gameplay. This Microsoft Xbox One S console features entertainment apps for more entertainment, and the 1TB of storage offers ample space for games.',
     brand: 'Microsoft',
     department: 'Video Games',
     color: 'white',
     subDept: 'Xbox One',
     sku: '6415222',
-    price: '$299.99',
+    price: 299.99,
     avgRating: 4.6,
-    colors: ['white', 'black']
+    colors: ['white', 'black'],
     reviews: [],
     questions: {
       question: 'Q: Can I play my Xbox 360 games on it?',
@@ -304,8 +287,7 @@ const mockData = [
   {
     uniqueID: 14,
     name: 'Madden NFL 21 - Xbox One',
-    description: '
-    Rise to Fame in Madden NFL 21. Pre-order and receive the following.*1 of 32 NFL Team Elite Pack*5 Madden Ultimate Team Gold Team Fantasy Packs*1 Uniform Pack of Your ChoiceA new generation is leaving its mark in the NFL. Will you rise to the occasion? Change the game and take control of your own legacy.',
+    description: 'Rise to Fame in Madden NFL 21. Pre-order and receive the following.*1 of 32 NFL Team Elite Pack*5 Madden Ultimate Team Gold Team Fantasy Packs*1 Uniform Pack of Your ChoiceA new generation is leaving its mark in the NFL. Will you rise to the occasion? Change the game and take control of your own legacy.',
     brand: 'EA Sports',
     department: 'Video Games',
     color: '',
@@ -371,9 +353,7 @@ const mockData = [
   {
     uniqueID: 17,
     name: 'Halo 5: Guardians Standard Edition - Xbox One',
-    description: '
-    A mysterious and unstoppable force threatens the galaxy, the Master Chief is missing and his loyalty questioned. Experience the most dramatic Halo story to date in a 4-player cooperative epic that spans three worlds. Challenge friends and rivals in new multiplayer modes: Warzone, massive 24-player battles, and Arena, pure 4-vs-4 competitive combat.*
-    *Online multiplayer features require Xbox Live Gold membership (sold separately).',
+    description: 'A mysterious and unstoppable force threatens the galaxy, the Master Chief is missing and his loyalty questioned. Experience the most dramatic Halo story to date in a 4-player cooperative epic that spans three worlds. Challenge friends and rivals in new multiplayer modes: Warzone, massive 24-player battles, and Arena, pure 4-vs-4 competitive combat. Online multiplayer features require Xbox Live Gold membership (sold separately).',
     brand: '343 Indusries',
     department: 'Video Games',
     color: '',
@@ -395,8 +375,7 @@ const mockData = [
   {
     uniqueID: 18,
     name: 'Call of Duty: Modern Warfare Standard Edition - Xbox One',
-    description: '
-    Prepare to go dark, Modern Warfare® is back.',
+    description: 'Prepare to go dark, Modern Warfare® is back.',
     brand: 'Activision',
     department: 'Video Games',
     color: '',
@@ -418,8 +397,7 @@ const mockData = [
   {
     uniqueID: 19,
     name: 'NBA 2K20 Standard Edition - Xbox One',
-    description: `
-    NBA 2K has evolved into much more than a basketball simulation. 2K continues to redefine what's possible in sports gaming with NBA 2K20, featuring great graphics and gameplay, ground-breaking game modes, and unparalleled player control and customization. Plus, with its immersive open-world Neighborhood, NBA 2K20 is a platform for gamers and ballers to come together and create what's next in basketball culture.`,
+    description: `NBA 2K has evolved into much more than a basketball simulation. 2K continues to redefine what's possible in sports gaming with NBA 2K20, featuring great graphics and gameplay, ground-breaking game modes, and unparalleled player control and customization. Plus, with its immersive open-world Neighborhood, NBA 2K20 is a platform for gamers and ballers to come together and create what's next in basketball culture.`,
     brand: '2K Sports',
     department: 'Video Games',
     color: '',
@@ -441,8 +419,7 @@ const mockData = [
   {
     uniqueID: 20,
     name: 'Mortal Kombat 11 Aftermath Kollection - Xbox One',
-    description: '
-    Unleash fury on opponents in this Mortal Kombat 11 Aftermath Kollection for Xbox One. The limitless customization of characters offers a personalized gaming experience, while the multiple and newly added fighters, including Sheeva, provide different styles of throwing crushing blows. Mortal Kombat 11 Aftermath Kollection features multiplayer support to test your combo skills against friends.',
+    description: 'Unleash fury on opponents in this Mortal Kombat 11 Aftermath Kollection for Xbox One. The limitless customization of characters offers a personalized gaming experience, while the multiple and newly added fighters, including Sheeva, provide different styles of throwing crushing blows. Mortal Kombat 11 Aftermath Kollection features multiplayer support to test your combo skills against friends.',
     brand: 'WB Games',
     department: 'Video Games',
     color: '',
@@ -486,9 +463,7 @@ const mockData = [
   {
     uniqueID: 22,
     name: 'Far Cry 6 Standard Edition - Xbox One, Xbox Series X',
-    description: '
-    Game leverages Smart Delivery allowing access to both the Xbox One title and Xbox Series X title when available.
-    Welcome to Yara, a tropical paradise frozen in time. As the dictator of Yara, Anton Castillo is intent on restoring his nation back to its former glory by any means, with his son, Diego, following in his bloody footsteps. Their oppressive rule has ignited a revolution.',
+    description: 'Game leverages Smart Delivery allowing access to both the Xbox One title and Xbox Series X title when available. Welcome to Yara, a tropical paradise frozen in time. As the dictator of Yara, Anton Castillo is intent on restoring his nation back to its former glory by any means, with his son, Diego, following in his bloody footsteps. Their oppressive rule has ignited a revolution.',
     brand: 'Ubisoft',
     department: 'Video Games',
     color: '',
@@ -561,8 +536,7 @@ const mockData = [
   {
     uniqueID: 25,
     name: 'Super Smash Bros. Ultimate - Nintendo Switch',
-    description: `
-    Gaming icons clash in the ultimate brawl you can play anytime, anywhere! Smash rivals off the stage as new characters Simon Belmont and King K. Rool join Inkling, Ridley, and every fighter in Super Smash Bros. history. Enjoy enhanced speed and combat at new stages based on the Castlevania series, Super Mario Odyssey, and more!
+    description: `Gaming icons clash in the ultimate brawl you can play anytime, anywhere! Smash rivals off the stage as new characters Simon Belmont and King K. Rool join Inkling, Ridley, and every fighter in Super Smash Bros. history. Enjoy enhanced speed and combat at new stages based on the Castlevania series, Super Mario Odyssey, and more!
     Having trouble choosing a stage? Then select the Stage Morph option to transform one stage into another while battling—a series first! Plus, new echo fighters Dark Samus, Richter Belmont, and Chrom join the battle. Whether you play locally or online, savor the faster combat, new attacks, and new defensive options, like a perfect shield. Jam out to 900 different music compositions and go 1-on-1 with a friend, hold a 4-player free-for-all, kick it up to 8-player battles and more! Feel free to bust out your GameCube controllers—legendary couch competitions await—or play together anytime, anywhere!
     If you don’t already have a Nintendo Switch Online membership, you can try it out with a free 7-day trial. Don't worry if you already activated a previous free trial— an additional seven-day free trial is now available.`,
     brand: 'Nintendo',
@@ -631,10 +605,7 @@ const mockData = [
   {
     uniqueID: 28,
     name: 'Animal Crossing: New Horizons - Nintendo Switch',
-    description: '
-    Escape to a deserted island and create your own paradise as you explore, create, and customize in the Animal Crossing: New Horizons game. Your island getaway has a wealth of natural resources that can be used to craft everything from tools to creature comforts. You can hunt down insects at the crack of dawn, decorate your paradise throughout the day, or enjoy sunset on the beach while fishing in the ocean. The time of day and season match real life, so each day on your island is a chance to check in and find new surprises all year round.
-    Show off your island utopia to family and friends—or pack your bags and visit theirs. Whether playing online* or with others beside you**, island living is even better when you can share it. Even without hopping on a flight, you’ll meet a cast of charming animal residents bursting with personality. Friendly faces like Tom Nook and Isabelle will lend their services and happily help you grow your budding community. Escape to your island getaway—however, whenever, and wherever you want.
-    Polygon - "...crafting systems in this game are lovely."',
+    description: 'Escape to a deserted island and create your own paradise as you explore, create, and customize in the Animal Crossing: New Horizons game. Your island getaway has a wealth of natural resources that can be used to craft everything from tools to creature comforts. You can hunt down insects at the crack of dawn, decorate your paradise throughout the day, or enjoy sunset on the beach while fishing in the ocean. The time of day and season match real life, so each day on your island is a chance to check in and find new surprises all year round. Show off your island utopia to family and friends—or pack your bags and visit theirs. Whether playing online* or with others beside you**, island living is even better when you can share it. Even without hopping on a flight, you’ll meet a cast of charming animal residents bursting with personality. Friendly faces like Tom Nook and Isabelle will lend their services and happily help you grow your budding community. Escape to your island getaway—however, whenever, and wherever you want. Polygon - "...crafting systems in this game are lovely."',
     brand: 'Nintendo',
     department: 'Video Games',
     color: '',
@@ -656,8 +627,8 @@ const mockData = [
   {
     uniqueID: 29,
     name: `Luigi's Mansion 3 - Nintendo Switch`,
-    description: 'Luigi’s invited to the towering Last Resort hotel, but when Mario and friends go missing, our green-clad hero will have to conquer his fears to save them! Slam, blow away, and vacuum up ghosts with the all-new Poltergust G-00, and join forces with Gooigi to overcome the puzzling contraptions and mischievous boss on each themed floor. And that’s just the Last Resort. Enter the ScareScraper for 8-player local wireless or online co-op gameplay.
-    See if you can defeat all the ghosts, rescue all the toads, or clear other objectives before time runs out…in the ScareScraper! And for more mini-game madness, compete on teams at the ScreamPark! Whether you play with friends or wander the hotel alone, you’ll be sucked in by the atmospheric music and ghoulish décor of every cobwebby corner you explore. Why not take in the cinematic sights and sounds with a friend? In the main adventure, you and a friend can play together as Luigi and Gooigi in two-player co-op! Gooigi can walk on spikes, slip through tight spaces, and help Luigi overcome obstacles he can’t tackle alone. Never hurts to have a friend in this hotel; it may not be very spooky, but Luigi begs to differ!',
+    description: `Luigi’s invited to the towering Last Resort hotel, but when Mario and friends go missing, our green-clad hero will have to conquer his fears to save them! Slam, blow away, and vacuum up ghosts with the all-new Poltergust G-00, and join forces with Gooigi to overcome the puzzling contraptions and mischievous boss on each themed floor. And that’s just the Last Resort. Enter the ScareScraper for 8-player local wireless or online co-op gameplay.
+    See if you can defeat all the ghosts, rescue all the toads, or clear other objectives before time runs out…in the ScareScraper! And for more mini-game madness, compete on teams at the ScreamPark! Whether you play with friends or wander the hotel alone, you’ll be sucked in by the atmospheric music and ghoulish décor of every cobwebby corner you explore. Why not take in the cinematic sights and sounds with a friend? In the main adventure, you and a friend can play together as Luigi and Gooigi in two-player co-op! Gooigi can walk on spikes, slip through tight spaces, and help Luigi overcome obstacles he can’t tackle alone. Never hurts to have a friend in this hotel; it may not be very spooky, but Luigi begs to differ!`,
     brand: 'Nintendo',
     department: 'Video Games',
     color: '',
@@ -668,7 +639,7 @@ const mockData = [
     colors: ['physical copy', 'digital download'],
     reviews: [],
     questions: {
-      question: `Q: Can you play as different character's ?,`
+      question: `Q: Can you play as different character's`,
       answer: `A: You play in the game as the main character Luigi, when you need help, you can also call on Gooigi. Gooigi is his ectoplasmic doppleganger.`
     },
     images: [`https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6255/6255379_sd.jpg;maxHeight=640;maxWidth=550`, `https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6255/6255379cv12d.jpg;maxHeight=640;maxWidth=550`, `https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6255/6255379cv13d.jpg;maxHeight=640;maxWidth=550`],
@@ -703,8 +674,7 @@ const mockData = [
   {
     uniqueID: 31,
     name: 'Donkey Kong Country: Tropical Freeze - Nintendo Switch',
-    description: '
-    Take on new challenges with the old Kong crew when you play Donkey Kong Country Tropical Freeze for Nintendo Switch. Donkey, Diddy, Dixie and Cranky team up for more jumps and rolls, while Funky Kong climbs onto his trusty surfboard to show off his best moves. Rated E for everyone, Donkey Kong Country Tropical Freeze is an ideal option for family game night.',
+    description: 'Take on new challenges with the old Kong crew when you play Donkey Kong Country Tropical Freeze for Nintendo Switch. Donkey, Diddy, Dixie and Cranky team up for more jumps and rolls, while Funky Kong climbs onto his trusty surfboard to show off his best moves. Rated E for everyone, Donkey Kong Country Tropical Freeze is an ideal option for family game night.',
     brand: 'Nintendo',
     department: 'Video Games',
     color: '',
@@ -726,8 +696,7 @@ const mockData = [
   {
     uniqueID: 32,
     name: `Yoshi's Crafted World - Nintendo Switch`,
-    description: 'Jump into a new Yoshi adventure in a world made of everyday objects - like boxes and paper cups! As Yoshi, you’ll leap up high, gulp down enemies, and set out on a treasure hunt to find all the different collectables. On the flip side, stages can be played backwards, providing new perspectives to explore and new ways to locate some of the more craftily hidden items!
-    It all started when Kamek and Baby Bowser set out to steal a gem-set stone. Legend has it that this fabled artifact can grant the bearer their wildest dreams! But when the artifact’s gems are sent flying, it falls upon Yoshi and friends to find them. Luckily, saving the day can be cooperative and challenging. Pass a Joy-Con™ controller to a friend to team up as fellow Yoshis. Also, Mellow mode gives Yoshi wings for a breezier experience, which may come in handy! Finding all the flowers, coins, and Poochy Pups is no small feat! For extra protection, suit up in one of the handicraft costumes you can unlock in-game!',
+    description: 'Jump into a new Yoshi adventure in a world made of everyday objects - like boxes and paper cups! As Yoshi, you’ll leap up high, gulp down enemies, and set out on a treasure hunt to find all the different collectables. On the flip side, stages can be played backwards, providing new perspectives to explore and new ways to locate some of the more craftily hidden items! It all started when Kamek and Baby Bowser set out to steal a gem-set stone. Legend has it that this fabled artifact can grant the bearer their wildest dreams! But when the artifact’s gems are sent flying, it falls upon Yoshi and friends to find them. Luckily, saving the day can be cooperative and challenging. Pass a Joy-Con™ controller to a friend to team up as fellow Yoshis. Also, Mellow mode gives Yoshi wings for a breezier experience, which may come in handy! Finding all the flowers, coins, and Poochy Pups is no small feat! For extra protection, suit up in one of the handicraft costumes you can unlock in-game!',
     brand: 'Nintendo',
     department: 'Video Games',
     color: '',
@@ -749,8 +718,7 @@ const mockData = [
   {
     uniqueID: 33,
     name: 'New Super Mario Bros. U Deluxe - Nintendo Switch',
-    description: 'Join Mario, Luigi, and pals for single-player or multiplayer fun anytime, anywhere. Take on two family-friendly, side-scrolling adventures with up to three friends* as you try to save the Mushroom Kingdom. Includes the New Super Mario Bros. U game and a harder, faster New Super Luigi U game - both of which include Nabbit and Toadette as playable characters.
-    Two games in one for double the fun. Simple, straightforward controls, new playable characters optimized for younger and less-experienced players, and a wealth of bonus content, such as a Hints gallery and helpful reference videos**, make this a perfect choice for anyone looking to introduce their family to the wonderful world of Mario. All a player needs is one Joy-Con controller, so two people can team up right out of the box. Tackle 164 platforming courses in two main game modes, and enjoy extra replayability with three additional game modes, in which you can also play as a Mii character: Challenges, Boost Rush, and Coin Battle.',
+    description: 'Join Mario, Luigi, and pals for single-player or multiplayer fun anytime, anywhere. Take on two family-friendly, side-scrolling adventures with up to three friends* as you try to save the Mushroom Kingdom. Includes the New Super Mario Bros. U game and a harder, faster New Super Luigi U game - both of which include Nabbit and Toadette as playable characters. Two games in one for double the fun. Simple, straightforward controls, new playable characters optimized for younger and less-experienced players, and a wealth of bonus content, such as a Hints gallery and helpful reference videos**, make this a perfect choice for anyone looking to introduce their family to the wonderful world of Mario. All a player needs is one Joy-Con controller, so two people can team up right out of the box. Tackle 164 platforming courses in two main game modes, and enjoy extra replayability with three additional game modes, in which you can also play as a Mii character: Challenges, Boost Rush, and Coin Battle.',
     brand: 'Nintendo',
     department: 'Video Games',
     color: '',
@@ -770,6 +738,776 @@ const mockData = [
     recentlyViewed: false
   },
   {
+    uniqueID: 50,
+    name: 'Apple - iPhone SE (2nd generation) 64GB - Black (Verizon)',
+    description: 'iPhone SE is the powerful 4.7-inch iPhone.¹ Features A13 Bionic, one of the fastest chips in a smartphone, for incredible performance in apps, games, and photography. Portrait mode for studio-quality portraits and six lighting effects. Next-generation Smart HDR for incredible detail across highlights and shadows. Cinematic-quality 4K video. And all the advanced features of iOS. With long battery life² and water resistance³, it\'s so much of the iPhone you love, in a not so big size.',
+    brand: 'Apple',
+    department: 'Cell Phones',
+    color: 'black',
+    subDept: 'iPhone',
+    sku: 6341338,
+    price: 399.99,
+    avgRating: 4.7,
+    colors: ['Black', 'Red', 'White'],
+    reviews: [1,2,3],
+    questions: {
+      question: 'Will my Verizon monthly bill change if all I do is replace my 6S with the SE?',
+      answer: 'Sometimes when your purchase the equipment from Verizon they’ll require old plans to be updated to new ones but if you purchase the phone outside of them, then there’ll be no changes to your plan'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6341/6341338_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6341/6341338cv11d.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6341/6341338cv12d.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 51,
+    name: 'Apple - iPhone 11 Pro Max 64GB - Space Gray (AT&T)',
+    description: 'Shoot amazing videos and photos with the Ultra Wide, Wide, and Telephoto cameras. Capture your best low-light photos with Night mode. Watch HDR movies and shows on the 6.5-inch Super Retina XDR display – the brightest iPhone display yet.¹ Experience unprecedented performance with A13 Bionic for gaming, augmented reality (AR), and photography. And get all-day battery life² and a new level of water resistance.³ All in the first iPhone powerful enough to be called Pro.',
+    brand: 'Apple',
+    department: 'Cell Phones',
+    color: 'Space Gray',
+    subDept: 'iPhone',
+    sku: 6341313,
+    price: 1099.99,
+    avgRating: 4.9,
+    colors: ['Gold', 'Space Gray', 'Midnight Green', 'Silver'],
+    reviews: [4],
+    questions: {
+      question: 'When will Best Buy have unlocked phones?',
+      answer: ' I just bought an 11 Pro Max. I already have AT*T service and SIM. BB usually unlocked phones for me when I buy them outright. This time, they were told they can not unlock new iphones. A new policy in the past few months. They were told to tell me, I have to wait 60 days. Then I could have AT*T unlock it. So I went home with the phone, called AT*T, and was unlocked in minutes.'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6341/6341313_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6341/6341313cv11d.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6341/6341313cv13d.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 52,
+    name: 'Apple - Preowned iPhone X with 256GB Memory Cell Phone (Unlocked) - Silver',
+    description: 'Stream videos and play online games smoothly with this preowned 5.8-inch Apple iPhone X. The LTE connectivity delivers lightning-fast Internet speeds, while the 256GB of internal storage accommodates files and videos. This unlocked silver Apple iPhone X features Face ID for secure access, and the A11 Bionic chipset ensures powerful performance.',
+    brand: 'Apple',
+    department: 'Cell Phones',
+    color: 'Silver',
+    subDept: 'iPhone',
+    sku: 6394666,
+    price: 519.99,
+    avgRating: 3.8,
+    colors: ['Black', 'Silver'],
+    reviews: [],
+    questions: {
+      question: 'is there any visible scratches, cracks, or marks on this phone?',
+      answer: 'When I received mine there was a large gash in the front screen I don’t know about all of them but I was not pleased with the condition of mine.'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6394/6394666_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6394/6394666_bd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6394/6394666cv11a.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 53,
+    name: 'Apple - iPhone 8 256GB - Gold (AT&T)',
+    description: 'iPhone 8 is a new generation of iPhone. Designed with most durable glass and a stronger aerospace grade aluminum band. Charges wirelessly.¹ Resists water and dust.² 4.7-inch Retina HD display with True Tone.³ The 12MP camera comes with a new sensor and advanced image signal processor. Powered by A11 Bionic, a most powerful smartphone chip. Supports augmented reality experiences in games and apps. With iPhone 8, intelligence has never looked better.',
+    brand: 'iPhone',
+    department: 'Cell Phones',
+    color: 'Gold',
+    subDept: 'iPhone',
+    sku: 6009697,
+    price: 599.99,
+    avgRating: 4.7,
+    colors: ['Gold', 'Space Gray', 'Silver'],
+    reviews: [5,6,7],
+    questions: {
+      question: 'Is there a payment option to just pay for the phone in full, without a payment plan?',
+      answer: 'Yes. You can opt to pay in full instead of leasing.'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6009/6009697_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6009/6009697_bd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6009/6009697cv11d.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 54,
+    name: 'Apple - iPhone XS Max 64GB - Gold (Sprint)',
+    description: 'iPhone XS Max features a 6.5-inch Super Retina display with custom-built OLED panels for an HDR display that provides the industry\'s best color accuracy, true blacks, and remarkable brightness.¹ Advanced Face ID lets you securely unlock your iPhone, log in to apps, and pay with just a glance. The A12 Bionic chip with next-generation Neural Engine uses real-time machine learning to transform the way you experience photos, gaming, augmented reality, and more. A breakthrough 12MP dual-camera system takes your portraits to the next level with Portrait mode, Portrait Lighting, enhanced bokeh, and all-new Depth Control. Water resistance.² And iOS 12 – the most advanced mobile operating system – with powerful new tools that make iPhone more personal than ever.',
+    brand: 'Apple',
+    department: 'Cell Phones',
+    color: 'Gold',
+    subDept: 'iPhone',
+    sku: 6009766,
+    price: 649.99,
+    avgRating: 4.8,
+    colors: ['Gold', 'Space Gray', 'Silver'],
+    reviews: [8],
+    questions: {
+      question: 'This mobile is factory lock mobile or factory unlock mobile',
+      answer: 'This model will lock to the first carrier SIM that you put in. For example, if you put an AT&T Sim in at first, then it will lock to AT&T. If you want to unlock the phone, then you will need to pay off your AT&T contract, and they will unlock it. If you buy the phone out right from Best Buy, you still have to call the carrier who it is locked to, to have them unlock it. The phone has no idea whether it was purchased on a contract or it was purchased out right. Therefore it always locks, and it is up to you to contact your carrier to have it unlocked.'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6009/6009766_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6009/6009766_bd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6009/6009766cv12d.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 55,
+    name: 'Apple - iPhone 11 64GB - Black (AT&T)',
+    description: 'Shoot 4K videos, beautiful portraits, and sweeping landscapes with the all-new dual-camera system. Capture your best low-light photos with Night mode. See true-to-life color in your photos, videos, and games on the 6.1-inch Liquid Retina display.³ Experience unprecedented performance with A13 Bionic for gaming, augmented reality (AR), and photography. Do more and charge less with all-day battery life.² And worry less with water resistance up to 2 meters for 30 minutes.¹',
+    brand: 'Apple',
+    department: 'Cell Phones',
+    color: 'Black',
+    subDept: 'iPhone',
+    sku: 6341287,
+    price: 699.99,
+    avgRating: 4.8,
+    colors: ['Black', 'Green', 'Purple', 'Red', 'White', 'Yellow'],
+    reviews: [],
+    questions: {
+      question: 'I have a iPhone X to trade in to help lower the price or I have a iPhone 8 also. The phone I looked at was the 11 128gb green unit and my question is does the 749.00 price get reduced with the trade i of one of my phones ??',
+      answer: 'Yes a trade in will qualify to lower the price of the phone. I traded in my 6s plus and got $75 knocked off.'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6341/6341287cv11d.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6341/6341287cv12d.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6341/6341287cv13d.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 56,
+    name: 'Samsung - Galaxy S20 5G UW 128GB - Cosmic Gray (Verizon)',
+    description: 'Samsung Galaxy S20 Cell Phone for Verizon: Capture your adventures with this 5G-enabled Samsung Galaxy S20 smartphone. The 64MP camera delivers crisp and detailed pictures, while the Verizon 5G ultra-wideband network offers fast video streaming and lag-free gaming. This Samsung Galaxy S20 smartphone features an intelligent battery that is long-lasting and a 6.2-inch Infinity-O display for quick touch response and smooth graphics.',
+    brand: 'Samsung',
+    department: 'Cell Phones',
+    color: 'Cosmic Gray',
+    subDept: 'Samsung',
+    sku: 6412545,
+    price: 899.99,
+    avgRating: 4.3,
+    colors: ['Cosmic Gray', 'Cloud Pink', 'Cloud White'],
+    reviews: [9],
+    questions: {
+      question: 'What does the UW mean on the s20 phone? I thought the s20 has been out for a while, why does this phone need to be preordered? Thanks',
+      answer: 'The UW stands for "Ultra Wideband" It is the specific mmwave technology that Verizon uses for 5G. Verizon had to get Samsung to create a specific S20 model for their 5G technology. The previously released S20 was only compatible with other carriers "low-band" 5G technology. Once Verizon gets their low band up and running, the S20 5G UW will be compatable with it as well.'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6412/6412545_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6412/6412545_sd.jpg;maxHeight=640;maxWidth=550' ,'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6412/6412545cv11d.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 57,
+    name: 'Samsung - Galaxy S20+ 5G Enabled 128GB - Aura Blue (AT&T)',
+    description: 'Samsung Galaxy S20+ 5G Cell Phone for AT&T: This Samsung Galaxy S20+ 5G cell phone can perform more daily routines efficiently and is packed with power while equipped with an intelligent battery that\'s big enough to share. The 6.7" Infinity-O smooth-motion display reveals every image in perfect quality and features high-quality cameras with 30x Space Zoom capabilities, capturing more details to create a realistic image. Backward-compatible with 4G networks.',
+    brand: 'Samsung',
+    department: 'Cell Phones',
+    color: 'Aura Blue',
+    subDept: 'Samsung',
+    sku: 6400278,
+    price: 1199.99,
+    avgRating: 4.8,
+    colors: ['Cosmic Black', 'Cloud Blue', 'Aura Blue', 'Cosmic Gray', 'Cloud Pink'],
+    reviews: [],
+    questions: {
+      question: 'Do galaxy buds come with the S20',
+      answer: 'Mine did not come with them.'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6400/6400278_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6400/6400278cv11d.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6400/6400278cv12d.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 58,
+    name: 'Samsung - Galaxy Note10 256GB - Aura Black (AT&T)',
+    description: 'Revel in a powerful mobile experience with this Samsung Galaxy Note10 256GB Aura black smartphone for AT&T. The 6.3-inch AMOLED display offers brilliant image quality, while the mobile hotspot feature lets you provide data access to other wireless devices. The S Pen stylus allows you to remotely use gestures, take pictures and queue playlists with this Samsung Galaxy Note10 256GB Aura black smartphone.',
+    brand: 'Samsung',
+    department: 'Cell Phones',
+    color: 'Aura Black',
+    subDept: 'Samsung',
+    sku: 6361951,
+    price: 949.99,
+    avgRating: 4.7,
+    colors: ['Aura Black', 'Aura Blue', 'Aura White', 'Aura Glow'],
+    reviews: [],
+    questions: {
+      question: 'Dose it have Wi-Fi calling I would like a phone with Wi-Fi calling dose any or all note phones have this Option Because the service sucks where my houses is and I need to be able to make WiFi calls',
+      answer: 'Hello Liz, thanks for asking! You’re covered with Wi-Fi Calling from participating carriers. ^Elizabeth'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6361/6361951_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6361/6361951_rd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6361/6361951ld.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 59,
+    name: 'Samsung - Galaxy S10e with 256GB Memory Cell Phone Prism - Black (Verizon)',
+    description: 'This Samsung Galaxy S10e features an immersive display, sleek in size and packed with power. The incredible, powerful camera and totally reimagined interface do more in less space, with an intelligent battery that\'s big enough to share.',
+    brand: 'Samsung',
+    department: 'Cell Phones',
+    color: 'Black',
+    subDept: 'Samsung',
+    sku: 6326986,
+    price: 849.99,
+    avgRating: 4.6,
+    colors: ['Black', 'Prism Blue', 'Flamingo Pink', 'White'],
+    reviews: [],
+    questions: {
+      question: 'What are the dimensions of this phone and of all Galaxy S10 Phones? Thanks!',
+      answer: 'Hello Mike, the S10e has a display size of 5.8", while the S10 has a 6.1” display, the S10+ has a 6.4” display, and the S10 5G has the largest, a 6.7” display. ^Elizabeth'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6326/6326986_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6326/6326986_rd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6326/6326986ld.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 60,
+    name: 'Samsung - Galaxy S10 Lite with 128GB Memory Cell Phone (Unlocked) - Prism Black',
+    description: 'Stay connected and entertained with this Samsung Galaxy S10 Lite smartphone. The 6.7-inch FHD+ Super AMOLED display offers bright, detailed visuals, while the Snapdragon 855 processor and 8GB of RAM let you flip through applications easily. This Samsung Galaxy S10 Lite smartphone has 128GB of internal storage for accommodating your photos and downloads, and the 4500 mAh battery provides uninterrupted use.',
+    brand: 'Samsung',
+    department: 'Cell Phones',
+    color: 'Prism Black',
+    subDept: 'Samsung',
+    sku: 6404318,
+    price: 599.99,
+    avgRating: 4.6,
+    colors: ['Prism Black'],
+    reviews: [],
+    questions: {
+      question: 'What is the difference between the Galaxy S10 and the Galaxy S10 Lite?',
+      answer: 'The Galaxy S10 has a resolution of 1440 x 3040, while the S10 Lite is 1080 x 2400, and in combination with the different screen sizes that means the former has a pixel density that\'s much higher than the latter.'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6404/6404318_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6404/6404318_rd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6404/6404318ld.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 61,
+    name: 'Google - Pixel 4 64GB - Just Black (AT&T)',
+    description: 'Pixel 4 is the phone made the Google way. Its camera takes the perfect shot every time, even when it\'s dark out. The new Google Assistant helps you do things, such as control your phone and multitask between apps - with just your voice. Pixel 4 is also the first phone with Motion Sense, letting you use gestures to get things done without having to touch your phone. Google Pixel 4 is built around Google software you know and love, which is always getting better.',
+    brand: 'Google',
+    department: 'Cell Phones',
+    color: 'Just Black',
+    subDept: 'Google',
+    sku: 6382268,
+    price: 839.99,
+    avgRating: 4.3,
+    colors: ['Just Black', 'Clearly White'],
+    reviews: [],
+    questions: {
+      question: 'Is this really free if you\'re upgrading an existing line of AT&T service? This article says it is: https://www.gsmarena.com/deal_get_a_free_pixel_4_and_nest_hub_if_youre_on_at_t_and_upgrade-news-40686.php',
+      answer: 'Mine is $10 a month with ATT upgrade.'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6382/6382268_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6382/6382268cv12d.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6382/6382268cv13d.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 62,
+    name: 'Google - Pixel 4 XL 128GB - Clearly White (AT&T)',
+    description: 'Google Pixel 4 XL is a phone made the Google Way with a camera that takes a perfect shot every time and the new Google Assistant. It also provides Motion Sense™ technology. Google Pixel 4 XL is built around Google software you know and love that\'s always getting better.',
+    brand: 'Google',
+    department: 'Cell Phones',
+    color: 'Clearly White',
+    subDept: 'Google',
+    sku: 6382271,
+    price: 1079.99,
+    avgRating: 4.5,
+    colors: ['Clearly White', 'Just Black'],
+    reviews: [],
+    questions: {
+      question: 'For Cyber Monday there is a deal for $400 off the pixel 4 xl with $13 a month financing, how do I get this deal it doesn\'t say',
+      answer: 'You go to the website'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6382/6382271_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6382/6382271cv12d.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6382/6382271cv13d.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 63,
+    name: 'Motorola - Moto G Power Cell Phone with 64GB Memory (Unlocked) - Smoke Black',
+    description: 'Stay connected with this smoke black Motorola Moto G Power cell phone. A 6.4-inch Full HD+ Max Vision display delivers stunning visuals, while a 16.0MP triple camera captures high-quality photos. The 64GB of internal storage provides ample space for your videos, images and games. This Motorola Moto G Power cell phone has a powerful rechargeable battery with TurboPower that delivers up to three days of use on a single charge.',
+    brand: 'Motorola',
+    department: 'Cell Phones',
+    color: 'Smoke Black',
+    subDept: 'Motorola',
+    sku: 6398516,
+    price: 199.99,
+    avgRating: 4.5,
+    colors: ['Smoke Black'],
+    reviews: [],
+    questions: {
+      question: 'Does this phone come with a sim card or can I use my sim card from my previous phone ( galaxy g6)?',
+      answer: 'No. This phone doesn\'t come with any SIM card. You can use your current SIM card on this phone as long as your carrier is compatible with this phone. Check this link to see all compatible carriers: https://www.motorola.com/us/carrier-compatibility. -Jess'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6398/6398516_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6398/6398516_rd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6398/6398516ld.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 64,
+    name: 'Motorola - moto g Fast with 32GB Memory Cell Phone (Unlocked) - Pearl White',
+    description: 'Stay connected and entertained with this Motorola moto g fast smartphone. The Qualcomm Snapdragon 665 processor and 3GB of RAM let you flip through apps seamlessly, while the 32GB of internal storage accommodates your downloads and photos. This Motorola moto g fast smartphone features a 6.4-inch HD+ Max Vision display for crisp visuals, and the 4000 mAh rechargeable battery delivers up to two days of use.',
+    brand: 'Motorola',
+    department: 'Cell Phones',
+    color: 'Pearl White',
+    subDept: 'Motorola',
+    sku: 6411990,
+    price: 149.99,
+    avgRating: 4.3,
+    colors: ['Pearl White'],
+    reviews: [],
+    questions: {
+      question: 'I\'m loving my new phone, but I can\'t seem to find a case for it. What cases would be compatible with this device?',
+      answer: 'Found a great case on the otterbox web site.'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6411/6411990_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6411/6411990_rd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6411/6411990_bd.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 65,
+    name: 'Alcatel - AVALON V - Suede Gray (Verizon)',
+    description: 'Stay connected with this sleek Alcatel Avalon V smartphone. The 1.4GHz quad-core Snapdragon 425 processor and 2GB of RAM provide smooth performance and quick switching between apps. This Alcatel Avalon V smartphone runs on Android 8.1 Oreo OS, has a bright 5.34 inch display and has 16GB of internal memory.',
+    brand: 'Alcatel',
+    department: 'Cell Phones',
+    color: 'Suede Gray',
+    subDept: 'Alcatel',
+    sku: 6366110,
+    price: 99.99,
+    avgRating: 3.1,
+    colors: ['Suede Gray'],
+    reviews: [],
+    questions: {
+      question: 'Why it doesn\'t get off the first screen? After charging it freezes',
+      answer: 'Well it seems you have just simply a locked up os. possibly trying to do too many buttons while it was done charging. force restart your phone then power it down again normally. recharge your phone while off. then when fully charged power on. if problem persists contact Verizon.'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6366/6366110_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6366/6366110_rd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6366/6366110ld.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 66,
+    name: 'Samsung - Galaxy A71 5G UW 128GB - Prism Bricks Black (Verizon)',
+    description: 'The Samsung Galaxy A71 5G UW is your all-access pass to the 5G revolution, combining the unprecedented speed of next-gen connectivity with turbo-charged performance. Capture professional-grade photos with a versatile quad lens camera, take smooth, stable video even while moving and see it all on a vivid 6.7” Super AMOLED+ Infinity Display. All powered by a long-lasting, fast charging battery.',
+    brand: 'Samsung',
+    department: 'Cell Phones',
+    color: 'Prism Bricks Black',
+    subDept: 'Samsung',
+    sku: 6419992,
+    price: 499.99,
+    avgRating: 5.0,
+    colors: ['Prism Bricks Black'],
+    reviews: [],
+    questions: {
+      question: 'Does this model have the SD card option? It isn\'t listed in the overview/ specs. Most Galaxys do, but I wanted to make sure.',
+      answer: 'Yes, you can expand the memory with a micro SD card. The drawer with the micro SD card is also the same one with the SIM card. Don’t pull it out all the way when you install yours or else you will have a frustrating time getting everything back in its proper place. Don’t ask me how I know.........'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6419/6419992_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6419/6419992cv1d.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6419/6419992cv12d.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 67,
+    name: 'LG - 65" Class - CX Series - 4K UHD TV - Smart - OLED - with HDR',
+    description: 'Watch your favorite movies or programs on this 65-inch LG CX 4K smart TV. The a9 Gen 3 AI processor 4K delivers crisp, detailed visuals for an immersive entertainment experience, while NVIDIA G-SYNC and AMD FreeSync compatibility minimize stuttering and tearing while gaming. This LG CX 4K smart TV has a pair of 20W front-firing speakers for producing quality, room-filling sound.',
+    brand: 'LG',
+    department: 'TV & Home Theater',
+    color: 'Black',
+    subDept: 'TVs',
+    sku: 6401850,
+    price: 2499.99,
+    avgRating: 4.9,
+    colors: ['43\'\'', '48\'\'', '49\'\'', '50\'\'', '55\'\'', '65\'\''],
+    reviews: [],
+    questions: {
+      question: 'Will this TV support nextgen OTA (ATSC 3.0) broadcasting?',
+      answer: 'The six 2020 LG OLED models earning the NEXTGEN TV logo from the Consumer Technology Association are: the 55-, 65- and 77-inch class GX Gallery Series 4K Ultra HD models, the 65-inch class WX Wallpaper 4K model and 77- and 88-inch class ZX Real 8K models. The LG CX 65 inch Class 4K Smart OLED TV w/ AI ThinQ® (64.5 Diag), Model # OLED65CXPUA will not be receiving NEXTGEN TV (ATSC 3.0)...^IFV'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401850_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401850_rd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401850ld.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 68,
+    name: 'Sony - 65" Class - A8H Series - 4K UHD TV - Smart - OLED - with HDR',
+    description: 'Transform your movie-watching experience with this 65-inch Sony 4K smart TV. The self-illuminating OLED panel maintains colors consistently for quality images from any angle, while Dolby Vision coupled with Dolby Atmos technology fills your room with surround sound for truly immersive entertainment. This Sony 4K smart TV supports Chromecast and Bluetooth for wireless connections with a variety of devices.',
+    brand: 'Sony',
+    department: 'TV & Home Theater',
+    color: 'Black',
+    subDept: 'TVs',
+    sku: 6401203,
+    price: 2799.99,
+    avgRating: 4.9,
+    colors: ['43\'\'', '49\'\'', '55\'\'', '65\'\'', '75\'\'', '85\'\''],
+    reviews: [],
+    questions: {
+      question: 'I just setup my 65 A8H. How do you get it to upscale HD content coming in from cable to 4K? My A8H doesn’t seem to be doing it? Please help. Thanks',
+      answer: 'TV processor converts all sources to 3840 x 2160 (4K) as that is the only picture it can show. Original 4K sources ( such as 4K Blu-ray\'s or 4K clips) would look the best. Hi-Def 1920 x 1080 (1080i) or 720p cable or Blu-ray sources will not look as good, and SDR such as regular DVD\'s (480p) would look the worst; even though all of these would be displayed as 3840 x 2160 (4K) '
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401203_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401203_rd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401203ld.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 69,
+    name: 'LG - 55" Class - OLED - CX Series - Smart - 4K UHD TV with HDR',
+    description: 'Set up an immersive entertainment experience with this 55-inch LG OLED 4K UHD television. The ultra-thin OLED display lets you enjoy rich visuals and true-to-life action, while the advanced Gen 3 AI processor drives high performance, outstanding sound and clear, smooth imagery. This LG OLED 4K UHD television features LG ThinQ AI technology and integrated voice assistants for seamless access and control.',
+    brand: 'LG',
+    department: 'TV & Home Theater',
+    color: 'Black',
+    subDept: 'TV',
+    sku: 6401851,
+    price: 1699.99,
+    avgRating: 4.9,
+    colors: [['43\'\'', '48\'\'', '49\'\'', '50\'\'', '55\'\'', '65\'\'']],
+    reviews: [],
+    questions: {
+      question: 'Is this really the CX series or is it the 2019 model, because on the series selection it says C series and CX. Im looking for the 2020 model its a little confusing.',
+      answer: 'Go by the model number, it says CX and not C9 ( which is the 2019 model)'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401851_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401851_rd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401851ld.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 70,
+    name: 'Epson - Pro EX9220 1080p Wireless 3LCD Projector - Black',
+    description: 'Display vibrant office presentations with this Epson wireless projector. Its Miracast technology lets you mirror photos, videos and apps from your portable smart devices, and it delivers 3600 lumens of color and white brightness in 1920 x 1080 resolution for colorful, crisp image clarity. This Epson wireless projector has HDMI and USB inputs for making quick connections with external hardware.',
+    brand: 'Epson',
+    department: 'TV & Home Theater',
+    color: 'Black',
+    subDept: 'Projectors',
+    sku: 5901528,
+    price: 849.99,
+    avgRating: 4.7,
+    colors: ['500 lumens', '700 lumens'],
+    reviews: [],
+    questions: {
+      question: 'If I use a Roku streaming device, can I also use an external speaker system? Or will I be stuck using the projectors speakers? I ask because I have another epson projector today that if I use the HMDI port for video, I can use an external speaker system.',
+      answer: 'We just bought ours, using an Amazon firestick. We are using a separate Bluetooth speaker and it sounds great. I assume it would work as well with Roku'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5901/5901528_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5901/5901528_rd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5901/5901528ld.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 71,
+    name: 'VANKYO Leisure 3W Projector - White',
+    description: 'VANKYO Leisure 3W Mini Projector is an incredible 1080P supported, ideal for your home theater and outdoor activities. With advanced screen mirroring, it enables wireless screen sharing from IOS or Android devices.',
+    brand: 'Vankyo',
+    department: 'TV & Home Theater',
+    color: 'White',
+    subDept: 'Projectors',
+    sku: 6419993,
+    price: 129.99,
+    avgRating: 5.0,
+    colors: ['200 lumens', '400 lumens'],
+    reviews: [],
+    questions: {
+      question: 'Does anyone know if this can be used to project still images, as in a presentation of a document? It would be on the screen approximately 4 to 5 minutes without changes.',
+      answer: 'Yes.'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6419/6419993_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6419/6419993cv11d.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6419/6419993cv12d.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 72,
+    name: 'Epson - Home Cinema 3800 4K 3LCD Projector with High Dynamic Range - White',
+    description: 'Enjoy an immersive entertainment experience with this Epson Home Cinema 4K projector. The three-chip design with 3LCD technology delivers high-quality visuals, while the built-in dual 10W speakers produce crisp sound. This Epson Home Cinema 4K projector has HDMI and USB ports for connecting a wide variety of devices, and Bluetooth connectivity lets you play media files from your mobile device.',
+    brand: 'Epson',
+    department: 'TV & Home Theater',
+    color: 'White',
+    subDept: 'Projectors',
+    sku: 6366530,
+    price: 1699.99,
+    avgRating: 4.8,
+    colors: ['500 lumens', '600 lumens'],
+    reviews: [],
+    questions: {
+      question: 'How far away from the wall do you need to be to have a certain size screen is there a chart available for these projectors',
+      answer: 'Epson has a throw calculator that tells you mounting distance based on screen size and few other factors https://epson.com/support/projection-distance-calculators. Another valuable resource is projectorcentral dot com'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6366/6366530_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6366/6366530_rd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6366/6366530ld.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 73,
+    name: 'Miroir - Surge Series SYNQ 720p DLP Mini Projector - Black',
+    description: 'Stream HD content anywhere with this Miroir SYNQ mini projector. The powerful LED lamp projects bright, detailed images in native 720p resolution, and a 5W speaker adds accurate audio to your viewing experience. This Miroir SYNQ mini projector offers up to 3 hours of use per charge and includes an AC adapter for battery-free streaming.',
+    brand: 'Miroir',
+    department: 'TV & Home Theater',
+    color: 'Black',
+    subDept: 'Projectors',
+    sku: 6359838,
+    price: 349.99,
+    avgRating: 4.6,
+    colors: ['200 lumens', '400 lumens'],
+    reviews: [],
+    questions: {
+      question: 'How do you stream videos to your projector?',
+      answer: 'There is an hdmi port in the projector. You would need a chrome cast / Apple TV / fire stick etc to steam to it.'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6359/6359838_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6359/6359838_rd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6359/6359838ld.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 74,
+    name: 'TCL - 55" Class - LED - 6 Series - 2160p - Smart - 4K UHD TV with HDR - Roku TV',
+    description: 'Experience immersive entertainment with this TCL Ultra HD television. A FullView edge-to-edge glass display reproduces quality images, while an easy-to-use remote control, a voice control function and an intuitive interface ensure stress-free operation. This TCL Ultra HD television features dual-band Wi-Fi and an Ethernet port for internet connectivity and is compatible with VESA standards for easy placement.',
+    brand: 'TCL',
+    department: 'TV & Home Theater',
+    color: 'Black',
+    subDept: 'TVs',
+    sku: 6367716,
+    price: 579.99,
+    avgRating: 4.6,
+    colors: ['32\'\'', '40\'\'', '43\'\'', '50\'\'', '55\'\'', '65\'\''],
+    reviews: [],
+    questions: {
+      question: `What is the outer width of the feet of the series 6 55" tv? I'm afraid it won't fit on my 42" stand if the legs are way out at the edges.`,
+      answer: 'For this 55 inch TCL Roku TV, the feet spacing to fit on a stand is 48.3 inches. This TV is also compatible with most mounts that support a 200mm x 200mm VESA mount pattern. Hope this helps! Thank you, TCL Customer Support'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6367/6367716_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6367/6367716_rd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6367/6367716ld.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 75,
+    name: 'VIZIO - 65" Class - LED - P Series Quantum Series - 2160p - Smart - 4K UHD TV with HDR',
+    description: 'Enjoy immersive visual content with this 65-inch VIZIO P-Series UHD smart TV. The Wi-Fi connectivity supports seamless media streaming, while the five HDMI inputs and USB and Ethernet ports connect to external sources. Compatibility with Apple AirPlay and HomeKit lets you share images and video from all your enabled devices with a touch. This VIZIO P-Series UHD smart TV provides 4K picture quality for true-to-life viewing experience, and two 10W speakers deliver audio.',
+    brand: 'Vizio',
+    department: 'TV & Home Theater',
+    color: 'Black',
+    subDept: 'TVs',
+    sku: 6346168,
+    price: 999.99,
+    avgRating: 4.3,
+    colors: ['43\'\'', '50\'\'', '55\'\'', '65\'\'', '70\'\''],
+    reviews: [],
+    questions: {
+      question: 'How well does it work with a Roku?',
+      answer: 'I have the Roku Ultra connected to this TV. While watching Netflix, the audio of what you\'re watching would take maybe 3-5 seconds before you started hearing sound. It appears the most recent firmware is having issues with "DTS" and disabling or changing any DTS settings within the Roku setting (possibly the TV too!) alleviates the issue for the time being.'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6346/6346168_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6346/6346168_rd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6346/6346168ld.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 76,
+    name: 'TCL - 75" Class - LED - 8 Series - 2160p - Smart - 4K UHD TV with HDR - Roku TV',
+    description: 'Enjoy the 75-inch TCL QLED 4K UHD TV screen that showcases brilliant blacks and captivating colors. Quantum Dot technology provides a full palette of rich colors, increasing the picture\'s vibrancy. In addition, the TCL 8-Series TV offers mini-LED backlight display technology. This and Contrast Control Zones provide viewers with a high-degree of precision, smoothness, uniformity, brightness, and illumination, not to mention a spectacular, immersive viewing experience on the FullView edge-to-edge glass display. Four HDMI ports and one USB let you connect multiple devices.',
+    brand: 'TCL',
+    department: 'TV & Home Theater',
+    color: 'Black',
+    subDept: 'TVs',
+    sku: 6377907,
+    price: 1799.99,
+    avgRating: 4.6,
+    colors: ['32\'\'', '40\'\'', '43\'\'', '50\'\'', '55\'\'', '65\'\'', '75\'\''],
+    reviews: [],
+    questions: {
+      question: 'QuestionDoes This TV Have HDMI 2.1 eARC ?',
+      answer: 'No, it doesn\'t have an HDMI 2.1 eARC.'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6377/6377907_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6377/6377907_rd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6377/6377907_bd.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 77,
+    name: 'Hisense - 55" Class - H8G Quantum Series - 4K UHD TV - Smart - LED - with HDR',
+    description: 'Transform your viewing experience with this 55-inch Hisense Quantum smart TV. The Dolby Vision HDR technology and Dolby Atmos blend to deliver immersive visuals and cinema-like sound, while the Hi-View Engine and local dimming zones produce vivid and sharp image contrasts. This Hisense Quantum smart TV features AI technology for adjusting pictures automatically, and the game mode improves refresh rates for impressive responses',
+    brand: 'Hisense',
+    department: 'TV & Home Theater',
+    color: 'Black',
+    subDept: 'TVs',
+    sku: 6403994,
+    price: 499.99,
+    avgRating: 4.4,
+    colors: ['32\'\'', '40\'\'', '43\'\'', '50\'\'', '55\'\'', '65\'\'', '75\'\''],
+    reviews: [],
+    questions: {
+      question: 'Does this TV have an optical out? In the specifications I don\'t see it but in all the photos it is present. I\'m talking about the square port for audio. I know its in the 65" but I need to know about the 55" model?',
+      answer: 'Hello Hisense Customer, Thank you for your interest in the 55H8G. Yes the television does have an optical connection. If you have any further questions please give us a call at 1-888-935-8880 or email us at service@hisense-usa.com. Thanks Again, We look forward to hearing from you! Harley with the Hisense Support Team'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6403/6403994_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6403/6403994_rd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6403/6403994ld.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 78,
+    name: 'Hisense - 65" Class - H8F Series - 4K UHD TV - Smart - LED - with HDR',
+    description: 'Watch your favorite movies and shows in lifelike quality with this 65-inch Hisense 4K ULED Android smart TV. Dolby Vision HDR provides exceptional color, brightness and contrast, while the built-in Google Assistant enables voice control. This Hisense 4K ULED Android smart TV features automated scene recognition, matching video and sound settings to the content.',
+    brand: 'Hisense',
+    department: 'TV & Home Theater',
+    color: 'Black',
+    subDept: 'TVs',
+    sku: 6360623,
+    price: 629.99,
+    avgRating: 4.3,
+    colors: ['40\'\'', '43\'\'', '50\'\'', '55\'\'', '65\'\''],
+    reviews: [],
+    questions: {
+      question: 'What is the distance between the legs on this TV? The spacing distance? Thanks <><',
+      answer: `Hi John! Good question. The H8F legs, which have a helpful and unique attribute for anyone with limited space, can be mounted in either of two sets of holes on the bottom of the H8F. The two far holes make a footprint of about 56 inches. The two holes closer to the center give the TV a footprint just 32 inches wide, so it will fit on a surface not many 65 TVs will!`
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6360/6360623_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6360/6360623_rd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6360/6360623ld.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 79,
+    name: 'LG - 75" Class - UN8500 Series - 4K UHD TV - Smart - LED - with HDR',
+    description: 'Enjoy an immersive entertainment experience with this 75-inch LG UN8500 Series 4K smart TV. The α7 Gen 3 Processor 4K delivers crisp, detailed pictures for a cinematic view, and voice control through Alexa and Google Assistant ensures seamless operation. This LG UN8500 Series 4K Smart TV has a 20W speaker system for producing powerful sound, while the HDMI and USB ports offer flexible connections to various devices.',
+    brand: 'LG',
+    department: 'TV & Home Theater',
+    color: 'Black',
+    subDept: 'TVs',
+    sku: 6401781,
+    price: 1129.99,
+    avgRating: 4.8,
+    colors: ['55\'\'', '58\'\'', '60\'\'', '65\'\'', '75\'\''],
+    reviews: [],
+    questions: {
+      question: 'Can anyone confirm if this tv supports 4K @120HZ GAMING resolution.',
+      answer: 'Yes it does!!! I at an Xbox OneS true 4K resolution at 120hz'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401781_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401781_rd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401781ld.jpg;maxHeight=640;maxWidth=550' ],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 80,
+    name: 'LG - 49" Class - NanoCell 85 Series - 4K UHD TV - Smart - LED - with HDR',
+    description: 'Stream online media content and get the most out of your games with this LG NanoCell 85 Series smart TV. The side-illuminated 4K display brings movies to life, and a third-generation a7 processor offers accurate color rendering. This 49-inch LG NanoCell 85 Series smart TV supports local dimming for faultless depiction of dark movie scenes.',
+    brand: 'LG',
+    department: 'TV & Home Theater',
+    color: 'Black',
+    subDept: 'TVs',
+    sku: 6401880,
+    price: 649.99,
+    avgRating: 4.4,
+    colors: ['43\'\'', '48\'\'', '50\'\'', '55\'\'', '65\'\''],
+    reviews: [],
+    questions: {
+      question: 'it has Freesync for ps5? i need to know because i buyng the ps5, also using freesync for my graphic card for AMD',
+      answer: 'Freesync support is coming in a future firmware update. This along with the 4k @ 120hz support is the reason I purchased this model. I can verify the PS4 and Xbox One X look great currently with little or no input lag or motion issues. The TV also supports the Xbox One X 1440p @ 120hz as well if needed. Great TV for gaming at this size and with these features. Enjoy your PS5 or Xbox Series X.'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401880_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401880_rd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401880ld.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 81,
+    name: 'LG - 86" Class - UN8500 Series - 4K UHD TV - Smart - LED - with HDR',
+    description: 'Immerse yourself into the action with this 86-inch LG LED Smart TV. The wide 4K IPS display produces clarity, color, and detail in every scene, while Dolby Vision IQ automatically adjusts the picture depending on the lighting of your room for quality viewing. This LG LED Smart TV features over 180 IP streaming channels for endless variety and Dolby Atmos for a complete multidimensional surround sound experience.',
+    brand: 'LG',
+    department: 'TV & Home Theater',
+    color: 'Black',
+    subDept: 'TVs',
+    sku: 6401777,
+    price: 1899.99,
+    avgRating: 4.8,
+    colors: ['70\'\'', '75\'\'', '77\'\'', '72\'\'', '86\'\'', '88\'\''],
+    reviews: [],
+    questions: {
+      question: 'QuestionI was wondering how good of tv this is am I getting a good tv for this or is there a better 86inch tv from lg',
+      answer: 'I have this 86” 8 series for my man cave, as well as the nano cell 86” for my living room. The only difference I can find is in the speakers as the nano cell has a better sound. If your connecting it to a surround sound system then who cares. I’ve watched movies, played games, and Watched sports on both and I just can’t tell the difference, except that I’m about $1,200 to the good in my bank account by buying the 8 series.'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401777_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401777_rd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401777ld.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 82,
+    name: 'LG - 88" Class - OLED - Z9 Series - 8K - Smart - with HDR',
+    description: 'Stay entertained with this 88-inch LG OLED 8K Smart TV. The wide viewing angle lets you watch from any position, while the HDMI ports allow for fast and responsive connectivity to multiple devices. The a9 Gen 2 Intelligent processor on this 88-inch LG OLED 8K Smart TV produces detailed and high-quality images, and the high resolution of over 33 million pixels enhances picture clarity.',
+    brand: 'LG',
+    department: 'TV & Home Theater',
+    color: 'White',
+    subDept: 'TVs',
+    sku: 6378085,
+    price: 29999.99,
+    avgRating: 5.0,
+    colors: ['86\'\'', '88\'\''],
+    reviews: [],
+    questions: {
+      question: 'is it 3D',
+      answer: 'The SOLE reason why I haven\'t invest on a new tv since 2016 - 75" LG 8500. My 3D library means a lot to me. I will jump on ANY large screen tv with 3D capabilities regardless of price.'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6378/6378085_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6378/6378085_rd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6378/6378085ld.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 83,
+    name: 'Samsung - 65" Class - Q800T Series - 8K UHD TV - Smart - LED - with HDR',
+    description: 'Enjoy your favorite shows and videos with this Samsung QLED smart TV. The 65-inch ultra-viewing display is engineered to provide an immersive viewing experience, while the Quantum Processor upscales low-resolution content to 8K resolution for vibrant detailed pictures. This Samsung QLED smart TV has built-in speakers with OTS+ for accurate cinema-quality sound.',
+    brand: 'Samsung',
+    department: 'TV & Home Theater',
+    color: 'Space Gray',
+    subDept: 'TVs',
+    sku: 6401972,
+    price: 3199.99,
+    avgRating: 5.0,
+    colors: ['43\'\'', '48\'\'', '50\'\'', '55\'\'', '65\'\''],
+    reviews: [],
+    questions: {
+      question: 'I\'m considering buying a 65" Q800T 8k TV soon. My Question is, my cable provider is Directv TV. They only transmit 4K signal. Is it worth buying an 8K TV using a 4K signal? Is the resolution going to be noticeable or am I better off buying a 4K TV?',
+      answer: ' RCF01, the Q800T features our Quantum Processor 8K, which allows for 8K AI Upscaling. Whatever content you are watching, the Quantum Processor will know exactly what to do and automatically adapt to give you the very best sound and picture that fits into any environment. The Quantum Processor 8K also includes Machine Learning Technology which continuously improves your 8K picture, and Deep Learning Technology which adds fine detail restoration to upscaling. ^Gina'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401972_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401972_rd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401972ld.jpg;maxHeight=640;maxWidth=550'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
+    uniqueID: 84,
+    name: 'Samsung - 75" Class - LED - Q900 Series - 4320p - Smart - 8K UHD TV with HDR',
+    description: 'Get more out of your favorite shows and movies when you watch them on this Samsung 75-inch 8K Ultra HD smart TV. The 8K AI upscaling technology and Quantum Processor 8K remaster content for better audio and image quality, while the 100 percent color volume enhances hues for a rich viewing experience. With a simple-edge screen and flush wall-mount design, this Samsung 75-inch 8K Ultra HD smart TV blends seamlessly with your room.',
+    brand: 'Samsung',
+    department: 'TV & Home Theater',
+    color: 'Black',
+    subDept: 'TVs',
+    sku: 6323713,
+    price: 2999.99,
+    avgRating: 4.7,
+    colors: ['53\'\'', '58\'\'', '60\'\'', '65\'\'', '75\'\''],
+    reviews: [],
+    questions: {
+      question: 'What is the point of 8k when there is absolutely no true 8k content out there. Even 4k is still rather in its infancy.',
+      answer: '8k reduces aliasing and shimmer in pictures and creates a more 3D looking image. It also allows larger TVs to retain their sharpness vs smaller size TVs. Upscaling is the name of the game here.'
+    },
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6323/6323713_sd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6323/6323713_rd.jpg;maxHeight=640;maxWidth=550', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6323/6323713_sd.jpg;maxHeight=1000;maxWidth=1000'],
+    peopleAlsoBought: [],
+    peopleAlsoViewed: [],
+    recentlyViewed: false
+  },
+  {
     uniqueID: 90,
     name: 'Apple - 21.5" iMac® with Retina 4K display - Intel Core i3 (3.6GHz) - 8GB Memory - 1TB Hard Drive',
     description: "iMac performance is at an all-time high with a new eighth-generation Intel Core processor, powerful Radeon Pro 500X-series graphics, Thunderbolt 3 (USB-C) connectivity, and stunning Retina 4K display with one billion colors and 500 nits of brightness for vibrant images and razor-sharp text.",
@@ -778,7 +1516,7 @@ const mockData = [
     color: 'Silver',
     subDept: 'Desktops',
     sku: 5998901,
-    price: 1,299.99,
+    price: 1299.99,
     avgRating: 4.6,
     colors: ['Silver'],
     reviews: [],
@@ -786,7 +1524,7 @@ const mockData = [
       question: 'Why is this computer so expensive?',
       answer: "Apple's reputation and brand allow it to charge a premium for its high-end products."
       },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5998/5998901_sd.jpg;maxHeight=1000;maxWidth=1000', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5998/5998901ld.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5998/5998901cv12d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5998/5998901_sd.jpg;maxHeight=1000;maxWidth=1000', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5998/5998901ld.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5998/5998901cv12d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -800,7 +1538,7 @@ const mockData = [
     color: 'Silver',
     subDept: 'Desktops',
     sku: 5998910,
-    price: 1,999.99,
+    price: 1999.99,
     avgRating: 4.8,
     colors: ['Silver'],
     reviews: [],
@@ -808,7 +1546,7 @@ const mockData = [
       question: 'Does this computer have a headphone jack?',
       answer: "Yes."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5998/5998910_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5998/5998910ld.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5998/5998910cv12d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5998/5998910_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5998/5998910ld.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5998/5998910cv12d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -822,7 +1560,7 @@ const mockData = [
     color: 'Space Gray',
     subDept: 'Laptops',
     sku: 6366564,
-    price: 2,099.99,
+    price: 2099.99,
     avgRating: 4.8,
     colors: ['Space Gray', 'Silver'],
     reviews: [],
@@ -830,7 +1568,7 @@ const mockData = [
       question: 'What types of ports does this computer have?',
       answer: "It has four USB-C ports and one headphone jack."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6394/6394170_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6394/6394170cv11d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6394/6394170cv14d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6394/6394170_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6394/6394170cv11d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6394/6394170cv14d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -844,7 +1582,7 @@ const mockData = [
     color: 'Space Gray',
     subDept: 'Laptops',
     sku: 6287726,
-    price: 1,799.99,
+    price: 1799.99,
     avgRating: 4.8,
     colors: ['Space Gray', 'Silver'],
     reviews: [],
@@ -852,7 +1590,7 @@ const mockData = [
       question: 'Is this a good computer for students?',
       answer: "Yes, the 13-inch size makes the device very portable and light."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6287/6287723_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6287/6287723cv11d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6287/6287723cv13d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6287/6287723_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6287/6287723cv11d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6287/6287723cv13d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -874,7 +1612,7 @@ const mockData = [
       question: 'How much does the computer weigh?',
       answer: "About 2.75 pounds."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6366/6366606_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6366/6366606cv11d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6366/6366606cv13d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6366/6366606_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6366/6366606cv11d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6366/6366606cv13d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -896,7 +1634,7 @@ const mockData = [
       question: 'Does the touchbar freeze a lot?',
       answer: "It is possible for the touchbar to freeze. Please do not throw your computer if this happens."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6366/6366612_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6366/6366612cv11d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6366/6366612cv13d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6366/6366612_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6366/6366612cv11d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6366/6366612cv13d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -910,7 +1648,7 @@ const mockData = [
     color: 'Space Gray',
     subDept: 'Laptops',
     sku: 6287730,
-    price: 1,999.99,
+    price: 1999.99,
     avgRating: 4.8,
     colors: ['Space Gray', 'Silver'],
     reviews: [],
@@ -918,7 +1656,7 @@ const mockData = [
       question: 'How many photos can I put on this laptop?',
       answer: "It is possible to store about 250,000 photos taken with a 12MP camera on 1TB of storage."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6287/6287723_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6287/6287723cv11d.jpg','https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6287/6287723cv13d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6287/6287723_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6287/6287723cv11d.jpg','https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6287/6287723cv13d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -932,7 +1670,7 @@ const mockData = [
     color: 'Black',
     subDept: 'Laptops',
     sku: 6409060,
-    price: 1,399.99,
+    price: 1399.99,
     avgRating: 4.8,
     colors: ['Black'],
     reviews: [],
@@ -940,7 +1678,7 @@ const mockData = [
       question: "What's a 2-in-1 laptop?",
       answer: "You get the best of both worlds with a tablet and laptop in one...how fun!"
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6409/6409060_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6409/6409060_rd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6409/6409060cv13d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6409/6409060_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6409/6409060_rd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6409/6409060cv13d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -954,7 +1692,7 @@ const mockData = [
     color: 'Black',
     subDept: 'Laptops',
     sku: 6406467,
-    price: 1,399.99,
+    price: 1399.99,
     avgRating: 4.5,
     colors: ['Black'],
     reviews: [],
@@ -962,7 +1700,7 @@ const mockData = [
       question: "What's a 2-in-1 laptop?",
       answer: "You get the best of both worlds with a tablet and laptop in one...how fun!"
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6406/6406467_sd.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6406/6406467_sd.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -976,7 +1714,7 @@ const mockData = [
     color: 'Black',
     subDept: 'Laptops',
     sku: 6362950,
-    price: 1,690.99,
+    price: 1690.99,
     avgRating: 4.0,
     colors: ['Black'],
     reviews: [],
@@ -984,7 +1722,7 @@ const mockData = [
       question: "What is a laptop?",
       answer: "A portable computer."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6362/6362950_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6362/6362950cv11d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6362/6362950cv12d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6362/6362950_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6362/6362950cv11d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6362/6362950cv12d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -998,7 +1736,7 @@ const mockData = [
     color: 'Silver',
     subDept: 'Laptops',
     sku: 6402200,
-    price: 1,249.99,
+    price: 1249.99,
     avgRating: 4.7,
     colors: ['Silver'],
     reviews: [],
@@ -1006,7 +1744,7 @@ const mockData = [
       question: "Will people envy me if I get this laptop?",
       answer: "Probably not."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6402/6402200_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6402/6402200_rd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6402/6402200cv10d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6402/6402200_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6402/6402200_rd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6402/6402200cv10d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -1020,7 +1758,7 @@ const mockData = [
     color: 'Black',
     subDept: 'Laptops',
     sku: 6406695,
-    price: 1,599.99,
+    price: 1599.99,
     avgRating: 4.8,
     colors: ['Black'],
     reviews: [],
@@ -1028,7 +1766,7 @@ const mockData = [
       question: "What is 4k?",
       answer: "4K means a horizontal resolution of 4,096 pixels."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6406/6406695_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6406/6406695cv1d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6406/6406695cv4d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6406/6406695_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6406/6406695cv1d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6406/6406695cv4d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -1050,7 +1788,7 @@ const mockData = [
       question: "Can I game on this laptop?",
       answer: "If you have too little RAM—say, 4GB—there's a good chance a lot of the games you want to play just won't run, or at least won't run well."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6339/6339311_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6339/6339311_rd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6339/6339311cv4d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6339/6339311_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6339/6339311_rd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6339/6339311cv4d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -1064,7 +1802,7 @@ const mockData = [
     color: 'White',
     subDept: 'Desktops',
     sku: 6331730,
-    price: 1,299.99,
+    price: 1299.99,
     avgRating: 4.7,
     colors: ['White'],
     reviews: [],
@@ -1072,7 +1810,7 @@ const mockData = [
       question: "Can I game on this laptop?",
       answer: "If you're an average PC user outside of heavy data processing, you probably won't need more than 8 to 12GB of laptop RAM. For those who want to push the boundaries of a PC's capabilities and run several large programs at once, 12GB RAM laptops, 16GB RAM laptops, 32GB RAM laptops, or even 64GB are considerable options."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6331/6331730cv16d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6331/6331730_bd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6331/6331730ld.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6331/6331730cv16d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6331/6331730_bd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6331/6331730ld.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -1086,7 +1824,7 @@ const mockData = [
     color: 'Silver',
     subDept: 'Desktops',
     sku: 6221032,
-    price: 1,799.99,
+    price: 1799.99,
     avgRating: 4.7,
     colors: ['Silver'],
     reviews: [],
@@ -1094,7 +1832,7 @@ const mockData = [
       question: "Is this a good laptop?",
       answer: "This is a high-end laptop that can fit most consumers needs."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6221/6221032_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6221/6221032_rd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6221/6221032ld.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6221/6221032_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6221/6221032_rd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6221/6221032ld.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -1116,10 +1854,10 @@ const mockData = [
       question: "What does all-in-one mean?",
       answer: "An all in one computer is basically a monitor in which you just plug in your mouse and keyboard, all the hardware are inside the monitor's case."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6398/6398974_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6398/6398974_rd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6398/6398974_bd.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6398/6398974_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6398/6398974_rd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6398/6398974_bd.jpg'],
     peopleAlsoBought: '',
     peopleAlsoViewed: '',
-    recentlyViewed: ''
+    recentlyViewed: false
   },
   {
     uniqueID: 106,
@@ -1130,7 +1868,7 @@ const mockData = [
     color: 'Silver',
     subDept: 'Desktops',
     sku: 6374387,
-    price: 1,149.99,
+    price: 1149.99,
     avgRating: 4.7,
     colors: ['Silver'],
     reviews: [],
@@ -1138,7 +1876,7 @@ const mockData = [
       question: "What does all-in-one mean?",
       answer: "An all in one computer is basically a monitor in which you just plug in your mouse and keyboard, all the hardware are inside the monitor's case."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6374/6374387_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6374/6374387cv2d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6374/6374387cv3d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6374/6374387_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6374/6374387cv2d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6374/6374387cv3d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -1156,11 +1894,11 @@ const mockData = [
     avgRating: 4.7,
     colors: ['Black'],
     reviews: [],
-    questions: questions: {
+    questions: {
       question: "Does this come in other colors?",
       answer: "No."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6387/6387210_rd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6387/6387210_bd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6387/6387210cv11d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6387/6387210_rd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6387/6387210_bd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6387/6387210cv11d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -1182,7 +1920,7 @@ const mockData = [
       question: "What does solid state drive mean?",
       answer: "Solid state drives and hard disk drives are similar in their physical specifications, but they store data very differently."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6366/6366132_rd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6366/6366132cv12d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6366/6366132cv11d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6366/6366132_rd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6366/6366132cv12d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6366/6366132cv11d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -1204,7 +1942,7 @@ const mockData = [
       question: "Does this laptop have a touch screen?",
       answer: "Yes."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6367/6367805_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6367/6367805_rd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6367/6367805cv10d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6367/6367805_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6367/6367805_rd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6367/6367805cv10d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -1217,7 +1955,7 @@ const mockData = [
     department: 'Computers',
     color: 'Gray',
     subDept: 'Laptops',
-    sku: :6367803,
+    sku: 6367803,
     price: 849.99,
     avgRating: 4.5,
     colors: ['Gray'],
@@ -1226,7 +1964,7 @@ const mockData = [
       question: "Does this laptop have a touch screen?",
       answer: "Yes."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6367/6367803_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6367/6367803_rd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6367/6367803cv14d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6367/6367803_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6367/6367803_rd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6367/6367803cv14d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -1239,7 +1977,7 @@ const mockData = [
     department: 'Computers',
     color: 'Gray',
     subDept: 'Laptops',
-    sku:: 6359222,
+    sku: 6359222,
     price: 229.99,
     avgRating: 3.6,
     colors: ['Gray'],
@@ -1248,7 +1986,7 @@ const mockData = [
       question: "Is there an HDMI port?",
       answer: "Yes, there is one HDMI port."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6359/6359222_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6359/6359222_rd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6359/6359222cv10d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6359/6359222_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6359/6359222_rd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6359/6359222cv10d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -1261,8 +1999,8 @@ const mockData = [
     department: 'Computers',
     color: 'Black',
     subDept: 'Laptops',
-    sku:: 6394634,
-    price: 1,699.99,
+    sku: 6394634,
+    price: 1699.99,
     avgRating: 5.0,
     colors: ['Black'],
     reviews: [],
@@ -1270,7 +2008,7 @@ const mockData = [
       question: "Need a new laptop, considering a MacBook Is this one better?",
       answer: "Really, that will depend on what software you will be using with your new computer. Is your software compatible with the iOS or the Windows 10 Operating System? Choose your Operating System then choose your computer configuration based on the software you need to use to do your work."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6394/6394634_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6394/6394634cv1d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6394/6394634cv12d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6394/6394634_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6394/6394634cv1d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6394/6394634cv12d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -1283,7 +2021,7 @@ const mockData = [
     department: 'Computers',
     color: 'Black',
     subDept: 'Laptops',
-    sku:: 6413248,
+    sku: 6413248,
     price: 769.99,
     avgRating: 4.3,
     colors: ['Black'],
@@ -1292,7 +2030,7 @@ const mockData = [
       question: "I can put a 1tb HDD hard drive?",
       answer: "Yes, you can install a 2.5 hdd or SSHD in this Nitro 5 laptop."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6413/6413248_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6413/6413248_rd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6413/6413248cv4d.jpg;maxHeight=1000;maxWidth=1000'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6413/6413248_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6413/6413248_rd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6413/6413248cv4d.jpg;maxHeight=1000;maxWidth=1000'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -1305,7 +2043,7 @@ const mockData = [
     department: 'Computers',
     color: 'Silver',
     subDept: 'Laptops',
-    sku:: 6359965,
+    sku: 6359965,
     price: 999.99,
     avgRating: 4.4,
     colors: ['Silver'],
@@ -1314,7 +2052,7 @@ const mockData = [
       question: "Is this model of the Acer Swift 5 available with more SSD?",
       answer: "No."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6359/6359965_sa.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6359/6359965_ra.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6359/6359965cv11a.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6359/6359965_sa.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6359/6359965_ra.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6359/6359965cv11a.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -1327,7 +2065,7 @@ const mockData = [
     department: 'Computers',
     color: 'Black',
     subDept: 'Laptops',
-    sku:: 6402656,
+    sku: 6402656,
     price: 249.99,
     avgRating: 4.3,
     colors: ['Black'],
@@ -1336,7 +2074,7 @@ const mockData = [
       question: "Does this laptop allow you to use Google Chrome?",
       answer: "Yes, you can use the Google Chrome browser with this Windows laptop"
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6402/6402656_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6402/6402656cv12d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6402/6402656cv14d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6402/6402656_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6402/6402656cv12d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6402/6402656cv14d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -1349,8 +2087,8 @@ const mockData = [
     department: 'Computers',
     color: 'Gray',
     subDept: 'Laptops',
-    sku:: 6373047,
-    price: 1,099.99,
+    sku: 6373047,
+    price: 1099.99,
     avgRating: 4.6,
     colors: ['Gray'],
     reviews: [],
@@ -1358,7 +2096,7 @@ const mockData = [
       question: "Would this laptop be able to run a game like Fortnite?",
       answer: "According to systemrequirementslab.com (Can You Run It) this laptop meets the minimum requirements to run Fortnite and Fortnite Battle Royale. It does not meet the recommended specs due to the lack of a discrete graphics card and video RAM."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6373/6373047_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6373/6373047_rd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6373/6373047cv11d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6373/6373047_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6373/6373047_rd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6373/6373047cv11d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -1371,7 +2109,7 @@ const mockData = [
     department: 'Computers',
     color: 'Gray',
     subDept: 'Laptops',
-    sku:: 6408464,
+    sku: 6408464,
     price: 999.99,
     avgRating: 4.3,
     colors: ['Gray'],
@@ -1380,7 +2118,7 @@ const mockData = [
       question: "Does this model have the 144hz screen?",
       answer: "60Hz screen, just got mine a few hours ago and was able to confirm this."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6408/6408464_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6408/6408464ld.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6408/6408464cv4d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6408/6408464_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6408/6408464ld.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6408/6408464cv4d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -1393,7 +2131,7 @@ const mockData = [
     department: 'Computers',
     color: 'Gray',
     subDept: 'Laptops',
-    sku:: 6403819,
+    sku: 6403819,
     price: 699.99,
     avgRating: 4.2,
     colors: ['Gray'],
@@ -1402,7 +2140,7 @@ const mockData = [
       question: "Is the RAM upgradable?",
       answer: "Unfortunately the memory is soldered to the motherboard and cannot be upgraded."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6403/6403819_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6403/6403819cv1d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6403/6403819cv10d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6403/6403819_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6403/6403819cv1d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6403/6403819cv10d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -1415,8 +2153,8 @@ const mockData = [
     department: 'Computers',
     color: 'White',
     subDept: 'Laptops',
-    sku:: 6403816,
-    price: 1,499.99,
+    sku: 6403816,
+    price: 1499.99,
     avgRating: 4.4,
     colors: ['White'],
     reviews: [],
@@ -1424,7 +2162,7 @@ const mockData = [
       question: "Does this model have 2x8gb ram stick or is it 1 16gb ram with 1 open slot?",
       answer: "This model comes with 1 slot with 8GB DDR4-3200 installed and 8GB DDR4 on board."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6403/6403816_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6403/6403816_rd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6403/6403816cv4d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6403/6403816_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6403/6403816_rd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6403/6403816cv4d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -1437,7 +2175,7 @@ const mockData = [
     department: 'Computers',
     color: 'Platinum',
     subDept: 'Laptops',
-    sku:: 6374327,
+    sku: 6374327,
     price: 999.99,
     avgRating: 4.6,
     colors: ['Platinum'],
@@ -1446,7 +2184,7 @@ const mockData = [
       question: "Does this come laptop come already with windows 7 or 10 in it?",
       answer: "Windows 10."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6374/6374327_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6374/6374327cv15d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6374/6374327cv13d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6374/6374327_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6374/6374327cv15d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6374/6374327cv13d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -1459,8 +2197,8 @@ const mockData = [
     department: 'Computers',
     color: 'Platinum',
     subDept: 'Laptops',
-    sku:: 6408383,
-    price: 1,399.99,
+    sku: 6408383,
+    price: 1399.99,
     avgRating: 4.5,
     colors: ['Platinum'],
     reviews: [],
@@ -1468,7 +2206,7 @@ const mockData = [
       question: "Can you connect an Xbox controller to Surface Book 3?",
       answer: " You can pair up to 8 Xbox Wireless controllers with Surface Book 3 15” to enjoy the latest Xbox Game Pass titles for PC."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6408/6408383_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6408/6408383cv13d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6408/6408383cv14d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6408/6408383_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6408/6408383cv13d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6408/6408383cv14d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -1481,8 +2219,8 @@ const mockData = [
     department: 'Computers',
     color: 'Matte Black',
     subDept: 'Laptops',
-    sku:: 6374319,
-    price: 2,799.99,
+    sku: 6374319,
+    price: 2799.99,
     avgRating: 4.8,
     colors: ['Matte Black'],
     reviews: [],
@@ -1490,7 +2228,7 @@ const mockData = [
       question: "Hi! I would like to know if I can get this with a Spanish keyboard? Thank you very much!",
       answer: "No, this item doesn't come with a Spanish keyboard."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6374/6374319_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6374/6374319cv15d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6374/6374319cv13d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6374/6374319_sd.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6374/6374319cv15d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6374/6374319cv13d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
@@ -1503,7 +2241,7 @@ const mockData = [
     department: 'Computers',
     color: 'Black',
     subDept: 'Laptops',
-    sku:: 6306014,
+    sku: 6306014,
     price: 930.99,
     avgRating: 4.7,
     colors: ['Black'],
@@ -1512,9 +2250,11 @@ const mockData = [
       question: "Does this work with the full and regular version of Office 365 where you can create and use real Excel spreadsheets that support macros?",
       answer: "Yep! It runs full Windows 10 and full versions of all the Office365 products."
     },
-    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6306/6306014ld.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6306/6306014cv13d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6306/6306014cv12d.jpg'];
+    images: ['https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6306/6306014ld.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6306/6306014cv13d.jpg', 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6306/6306014cv12d.jpg'],
     peopleAlsoBought: [],
     peopleAlsoViewed: [],
     recentlyViewed: false
   }
 ];
+
+module.exports.data = data;
