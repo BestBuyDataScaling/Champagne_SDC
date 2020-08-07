@@ -12,9 +12,20 @@ app.use(express.json());
 
 app.get('/', (req, res) => {
   res.send('Hello from the server!')
-})
+});
+
+// should get all product documents
+app.get('/products', (req, res) => {
+  db.Product.find({}, (err, results) => {
+    if (err) {
+      console.log(`Error retrieving all prodcuts ${err}`);
+    } else {
+      console.log(`Success getting all prodcuts from db`)
+      res.send(results);
+    }
+  });
+});
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 });
-

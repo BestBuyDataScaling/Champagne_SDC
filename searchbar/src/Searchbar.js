@@ -4,6 +4,10 @@ class Searchbar extends React.Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+
+    }
+
   }
 
   render() {
@@ -13,8 +17,9 @@ class Searchbar extends React.Component {
       {/* the form will contain a text input */}
       <form class="searchbar">
         <input type="text" id="searchbarInput" maxlength="90" placeholder="Search Best Buy" autocomplete="off" spellcheck="false"></input>
-
       </form>
+      {/* create a drop down */}
+      {/* the drop down will contain 10 options (max) that match what the user is typing and each option will be a link */}
       </div>
     )
   }

@@ -29,10 +29,10 @@ db.once('open', () => {
     recentlyViewed: Boolean
   })
 
-  const ProductModel = mongoose.model('ProductModel', productSchema);
+  const Product = mongoose.model('Product', productSchema);
 
   let saveToDatabase = (model) => {
-    let product = new ProductModel({
+    let product = new Product({
       uniqueID: model.uniqueID,
       name: model.name,
       description: model.description,
@@ -73,7 +73,7 @@ db.once('open', () => {
   })
 
   module.exports.productSchema = productSchema;
-  module.exports.ProductModel = ProductModel;
+  module.exports.Product = Product;
 
 });
 
