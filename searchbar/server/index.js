@@ -18,9 +18,9 @@ app.get('/', (req, res) => {
 app.get('/products', (req, res) => {
   db.Product.find({}, (err, results) => {
     if (err) {
-      console.log(`Error retrieving all prodcuts ${err}`);
+      console.log(`Error retrieving all products ${err}`);
     } else {
-      console.log(`Success getting all prodcuts from db`)
+      console.log(`Success getting all products from db`)
       res.send(results);
     }
   });
