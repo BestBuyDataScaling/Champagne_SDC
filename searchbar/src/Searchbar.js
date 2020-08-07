@@ -2,6 +2,9 @@ import React from 'react';
 import axios from 'axios';
 import { TextField } from '@material-ui/core';
 import { Autocomplete } from '@material-ui/lab';
+import { InputAdornment } from '@material-ui/core';
+import { Search } from '@material-ui/icons';
+import { Button } from '@material-ui/core';
 
 class Searchbar extends React.Component {
   constructor(props) {
@@ -21,7 +24,7 @@ class Searchbar extends React.Component {
   getProducts = () => {
     axios.get('http://localhost:3001/products')
     .then(res => {
-      console.log(res);
+      // console.log(res);
       this.setState({
         products: res.data
       })
@@ -43,7 +46,13 @@ class Searchbar extends React.Component {
             placeholder="Search Best Buy..."
             margin="normal"
             variant="outlined"
-            InputProps={{ ...params.InputProps, type: 'search' }}
+            InputProps={{ ...params.InputProps, type: 'search', endAdornment: (
+              <InputAdornment>
+                <Button>
+                  <Search />
+                </Button>
+              </InputAdornment> )
+           }}
           />
         )}
       />
