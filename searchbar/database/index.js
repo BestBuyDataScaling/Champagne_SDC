@@ -29,7 +29,6 @@ db.once('open', () => {
     recentlyViewed: Boolean
   })
 
-  // export function to create productModel class
   const ProductModel = mongoose.model('ProductModel', productSchema);
 
   let saveToDatabase = (model) => {
@@ -56,7 +55,7 @@ db.once('open', () => {
       recentlyViewed: model.recentlyViewed
     });
     product.save();
-    console.log(`Created ${model.uniqueID}`)
+    // console.log(`Created ${model.uniqueID}`)
   }
 
   let promiseData = mock.data.map(async (product) => {
