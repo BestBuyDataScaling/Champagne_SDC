@@ -11,14 +11,22 @@ class Searchbar extends React.Component {
     super(props);
 
     this.state = {
-      products: []
+      products: [],
+      searchText: ''
     }
 
     this.getProducts = this.getProducts.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   componentDidMount = () => {
     this.getProducts();
+  }
+
+  handleChange = (e) => {
+    let addField = e.target.id;
+    this.setState({ [addField]: e.target.value });
+    console.log(e.target.value);
   }
 
   getProducts = () => {
@@ -41,18 +49,19 @@ class Searchbar extends React.Component {
         id="searchbar"
         options={this.state.products.map((product) => product.name)}
         renderInput={(params) => (
-          <TextField
+          <TextField onChange={(e) => this.handleChange(e)} id="searchText"
             {...params}
             placeholder="Search Best Buy..."
             margin="normal"
             variant="outlined"
-            InputProps={{ ...params.InputProps, type: 'search', endAdornment: (
-              <InputAdornment>
-                <Button>
-                  <Search />
-                </Button>
-              </InputAdornment> )
-           }}
+            InputProps={{ ...params.InputProps, type: 'search',
+              endAdornment: (
+                <InputAdornment>
+                  <Button>
+                    <Search />
+                  </Button>
+                </InputAdornment> )
+            }}
           />
         )}
       />
