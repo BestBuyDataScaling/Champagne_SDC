@@ -7,7 +7,7 @@ const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 
 db.once('open', () => {
-  console.log('connected to database!')
+  console.log('Hello from the Database!');
 
   const productSchema = mongoose.Schema({
     uniqueID: Number,
@@ -29,7 +29,7 @@ db.once('open', () => {
     recentlyViewed: Boolean
   })
 
-  const Product = mongoose.model('Product', productSchema);
+  let Product = mongoose.model('Product', productSchema);
 
   let saveToDatabase = (model) => {
     let product = new Product({
@@ -55,7 +55,7 @@ db.once('open', () => {
       recentlyViewed: model.recentlyViewed
     });
     product.save();
-    // console.log(`Created ${model.uniqueID}`)
+    console.log(`Created ${model.uniqueID}`)
   }
 
   let promiseData = mock.data.map(async (product) => {
@@ -72,8 +72,5 @@ db.once('open', () => {
     console.log(`Error saving product to database: ${err}`)
   })
 
-  module.exports.productSchema = productSchema;
   module.exports.Product = Product;
-
-});
-
+})

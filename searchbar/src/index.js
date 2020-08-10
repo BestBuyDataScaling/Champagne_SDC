@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Searchbar from './Searchbar';
+import App from './App';
 
 ReactDOM.render(
-    <Searchbar />,
+    <App />,
   document.getElementById('root')
 );
