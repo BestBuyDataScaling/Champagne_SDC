@@ -9,7 +9,7 @@ const Searchbar = (props) => {
   const { options, handleChange, handleSearchSubmit } = props;
   // console.log(props.options)
   return (
-    <div>
+    <div className="searchbarContainer">
       <Autocomplete
         id="searchbar"
         options={options.map(option => option.name)}
@@ -17,12 +17,13 @@ const Searchbar = (props) => {
           <TextField onChange={(e) => handleChange(e)} id="searchText"
             {...params}
             placeholder="Search Best Buy..."
+            maxLength="50"
             margin="normal"
             variant="outlined"
             InputProps={{ ...params.InputProps, type: 'search',
               endAdornment: (
                 <InputAdornment>
-                  <Button onClick={(e) => handleSearchSubmit(e)} >
+                  <Button id="searchBtn" onClick={(e) => handleSearchSubmit(e)} >
                     <Search />
                   </Button>
                 </InputAdornment> )

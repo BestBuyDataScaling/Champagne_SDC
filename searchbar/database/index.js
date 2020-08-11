@@ -57,23 +57,23 @@ db.once('open', () => {
       peopleAlsoViewed: [],
       recentlyViewed: model.recentlyViewed
     });
-    product.save();
-    console.log(`Created ${model.uniqueID}`)
+    // product.save();
+    // console.log(`Created ${model.uniqueID}`)
   }
 
-  let promiseData = mock.data.map(async (product) => {
-    return product
-  })
+  // let promiseData = mock.data.map(async (product) => {
+  //   return product
+  // })
 
-  Promise.all(promiseData)
-  .then((products) => {
-    products.map((product) => {
-      saveToDatabase(product);
-    })
-  })
-  .catch(err => {
-    console.log(`Error saving product to database: ${err}`)
-  })
+  // Promise.all(promiseData)
+  // .then((products) => {
+  //   products.map((product) => {
+  //     saveToDatabase(product);
+  //   })
+  // })
+  // .catch(err => {
+  //   console.log(`Error saving product to database: ${err}`)
+  // })
 
   module.exports.Product = Product;
 })
