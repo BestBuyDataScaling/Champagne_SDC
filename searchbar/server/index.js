@@ -4,7 +4,6 @@ const cors = require('cors');
 const db = require('../database/index');
 const mongoose = require('mongoose');
 
-
 const app = express();
 const port = 3001;
 
@@ -15,7 +14,6 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.send('Hello from the server!')
 });
-
 
 // should get all products
 app.get('/products', (req, res) => {
@@ -32,7 +30,7 @@ app.get('/products', (req, res) => {
 // should get relevant items based on client query
 app.get('/products/:query', (req, res) => {
   let query = req.params.query;
-  console.log(query);
+  // console.log(query);
   db.Product.find({ $text: { $search: query } } ,
   (err, results) => {
     if (err) {
