@@ -7,7 +7,7 @@ import { Button } from '@material-ui/core';
 
 const Searchbar = (props) => {
   const { options, handleChange } = props;
-  console.log(props.options)
+  // console.log(props.options)
   return (
     <div>
       <Autocomplete
