@@ -6,7 +6,7 @@ import { Search } from '@material-ui/icons';
 import { Button } from '@material-ui/core';
 
 const Searchbar = (props) => {
-  const { options, handleChange } = props;
+  const { options, handleChange, handleSearchSubmit } = props;
   // console.log(props.options)
   return (
     <div>
@@ -22,7 +22,7 @@ const Searchbar = (props) => {
             InputProps={{ ...params.InputProps, type: 'search',
               endAdornment: (
                 <InputAdornment>
-                  <Button>
+                  <Button onClick={(e) => handleSearchSubmit(e)} >
                     <Search />
                   </Button>
                 </InputAdornment> )
