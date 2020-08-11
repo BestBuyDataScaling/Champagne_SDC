@@ -29,6 +29,9 @@ db.once('open', () => {
     recentlyViewed: Boolean
   })
 
+  // enable text index in schema for search query
+  productSchema.index({ name: 'text'})
+
   let Product = mongoose.model('Product', productSchema);
 
   let saveToDatabase = (model) => {
