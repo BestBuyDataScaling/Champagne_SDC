@@ -16,12 +16,10 @@ app.get('/', (req, res) => {
   res.send('Hello from the server!')
 });
 
-// should get relevant items based on query
-app.get('/products/:query', (req, res) => {
-  let query = req.params.query;
-  console.log(query);
-  db.Product.find( { name: searchKey } ,
-  (err, results) => {
+
+// should get all products
+app.get('/products', (req, res) => {
+  db.Product.find({}, (err, results) => {
     if (err) {
       console.log(`Error retrieving all products ${err}`);
     } else {
@@ -31,13 +29,16 @@ app.get('/products/:query', (req, res) => {
   });
 })
 
-// should get all products
-app.get('/products', (req, res) => {
-  db.Product.find({}, (err, results) => {
+// should get relevant items based on client query
+app.get('/products/:query', (req, res) => {
+  let query = req.params.query;
+  console.log(query);
+  db.Product.find({ $text: { $search: query } } ,
+  (err, results) => {
     if (err) {
       console.log(`Error retrieving all products ${err}`);
     } else {
-      console.log(`Success getting all products from db`)
+      console.log(`Success getting related products from db`)
       res.send(results);
     }
   });
