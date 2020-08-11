@@ -16,7 +16,6 @@ app.get('/', (req, res) => {
   res.send('Hello from the server!')
 });
 
-
 // app.get('/products/:query', (req, res) => {
 //   let query = req.params.query;
 //   let searchKey = new RegExp(query, 'i')
