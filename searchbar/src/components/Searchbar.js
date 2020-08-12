@@ -16,7 +16,7 @@ const Searchbar = (props) => {
         renderInput={(params) => (
           <TextField onChange={(e) => handleChange(e)} id="searchText"
             {...params}
-            placeholder="Search Best Buy..."
+            placeholder="Search Best Buy"
             maxLength="50"
             margin="normal"
             variant="outlined"

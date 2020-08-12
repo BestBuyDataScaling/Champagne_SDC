@@ -3,17 +3,14 @@
   padding: 0;
 }
 
-.header .top-navbar {
-  padding: 13px 0;
-  width: 100%;
-  z-index: 100;
-  position: relative;
+#header {
   background-color: #0046be;
 }
 
+
 #logo {
+
   height: 72px;
-  vertical-align: middle;
 }
 
 .MuiInputBase-root {
