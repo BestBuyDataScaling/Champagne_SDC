@@ -73,22 +73,24 @@ const App = () => {
               <li>Back to School</li>
             </ul>
           </div>
-          <div className="lowerLeftNav">
-            <ul>
-              <li>Products</li>
-              <li>Brands</li>
-              <li>Deals</li>
-              <li>Services</li>
-            </ul>
-          </div>
-          <div className="lowerRightNav">
-            <ul>
-              <li><AccountCircle />  Account</li>
-              <li>Recently Viewed</li>
-              <li>Order Status</li>
-              <li>Saved Items</li>
-            </ul>
-          </div>
+      </div>
+      <div className="lowerNav">
+        <div className="lowerLeftNav">
+          <ul>
+            <li>Products</li>
+            <li>Brands</li>
+            <li>Deals</li>
+            <li>Services</li>
+          </ul>
+        </div>
+        <div className="lowerRightNav">
+          <ul>
+            <li><AccountCircle />  Account</li>
+            <li>Recently Viewed</li>
+            <li>Order Status</li>
+            <li>Saved Items</li>
+          </ul>
+        </div>
       </div>
       <SearchResults searchResults={searchResults} />
     </div>

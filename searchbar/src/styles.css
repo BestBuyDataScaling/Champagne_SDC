@@ -6,8 +6,17 @@
 .header {
   display: grid;
   grid-template-columns: repeat(20, 1fr);
-  grid-template-rows: repeat(3, 50px);
+  grid-template-rows: repeat(2, 60px);
   background-color: #0046be;
+  align-items: center;
+}
+
+.lowerNav {
+  display: grid;
+  background-color: #0046be;
+  border-top: 1px solid #4976e6;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: 50px;
   align-items: center;
 }
 
@@ -43,9 +52,10 @@
   color: white;
 }
 
+
 .upperRightContainer ul {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: minmax(10px, auto)1fr 1fr 1fr 1fr 1fr 1fr;
   list-style-type: none;
 }
 
@@ -71,14 +81,14 @@
 
 .lowerLeftNav {
   grid-column: 2 / 7;
-  grid-row: 3 / 4;
+  grid-row: 1 / 2;
   font-family: 'Roboto', sans-serif;
   color: white;
 }
 
 .lowerRightNav {
   grid-column: 14 / 21;
-  grid-row: 3 / 4;
+  grid-row: 1 / 2;
   font-family: 'Roboto', sans-serif;
   color: white;
 }
