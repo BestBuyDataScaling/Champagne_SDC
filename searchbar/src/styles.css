@@ -52,10 +52,9 @@
   color: white;
 }
 
-
 .upperRightContainer ul {
   display: grid;
-  grid-template-columns: minmax(10px, auto)1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
   list-style-type: none;
 }
 
