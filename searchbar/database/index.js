@@ -7,7 +7,7 @@ const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 
 db.once('open', () => {
-  console.log('connected to database!')
+  console.log('Hello from the Database!');
 
   const productSchema = mongoose.Schema({
     uniqueID: Number,
@@ -29,11 +29,13 @@ db.once('open', () => {
     recentlyViewed: Boolean
   })
 
-  // export function to create productModel class
-  const ProductModel = mongoose.model('ProductModel', productSchema);
+  // enable text index in schema for search query
+  productSchema.index({ name: 'text'})
+
+  let Product = mongoose.model('Product', productSchema);
 
   let saveToDatabase = (model) => {
-    let product = new ProductModel({
+    let product = new Product({
       uniqueID: model.uniqueID,
       name: model.name,
       description: model.description,
@@ -55,26 +57,23 @@ db.once('open', () => {
       peopleAlsoViewed: [],
       recentlyViewed: model.recentlyViewed
     });
-    product.save();
-    console.log(`Created ${model.uniqueID}`)
+    // product.save();
+    // console.log(`Created ${model.uniqueID}`)
   }
 
-  let promiseData = mock.data.map(async (product) => {
-    return product
-  })
+  // let promiseData = mock.data.map(async (product) => {
+  //   return product
+  // })
 
-  Promise.all(promiseData)
-  .then((products) => {
-    products.map((product) => {
-      saveToDatabase(product);
-    })
-  })
-  .catch(err => {
-    console.log(`Error saving product to database: ${err}`)
-  })
+  // Promise.all(promiseData)
+  // .then((products) => {
+  //   products.map((product) => {
+  //     saveToDatabase(product);
+  //   })
+  // })
+  // .catch(err => {
+  //   console.log(`Error saving product to database: ${err}`)
+  // })
 
-  module.exports.productSchema = productSchema;
-  module.exports.ProductModel = ProductModel;
-
-});
-
+  module.exports.Product = Product;
+})
