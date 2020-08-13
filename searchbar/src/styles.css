@@ -25,10 +25,6 @@
   grid-row: 2 / 3;
 }
 
-.MuiInputBase-root {
-  background-color: white;
-}
-
 .storeContainer {
   grid-column: 16 / 18;
   grid-row: 2 / 3;
