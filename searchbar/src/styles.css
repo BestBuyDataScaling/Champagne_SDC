@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(3, 50px);
+  background-color: #0046be;
+  align-items: center;
+}
+
+.logo {
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+}
+
+#logo {
+  height: 72px;
+}
+
+.middleNav {
+  grid-column: 4 / 12;
+  grid-row: 2 / 3;
+}
+
+.MuiInputBase-root {
+  background-color: white;
+}
+
+.storeContainer {
+  grid-column: 16 / 18;
+  grid-row: 2 / 3;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.cartContainer {
+  grid-column: 18 / 20;
+  grid-row: 2 / 3;
+}
+
+#cartBtn {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.upperRightContainer ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  list-style-type: none;
+}
+
+.lowerLeftNav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style-type: none;
+}
+
+.lowerRightNav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  list-style-type: none;
+}
+
+.upperRightContainer {
+  grid-column: 10 / 20;
+  grid-row: 1 / 1;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200px;
+  color: white;
+}
+
+.lowerLeftNav {
+  grid-column: 2 / 7;
+  grid-row: 3 / 4;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.lowerRightNav {
+  grid-column: 14 / 21;
+  grid-row: 3 / 4;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+
+
+
+
