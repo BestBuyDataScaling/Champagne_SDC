@@ -18,8 +18,12 @@ const Searchbar = (props) => {
             {...params}
             placeholder="Search Best Buy"
             maxLength="50"
-            margin="normal"
+            margin="dense"
             variant="outlined"
+            size="small"
+            style={{
+              backgroundColor: "white"
+            }}
             InputProps={{ ...params.InputProps, type: 'search',
               endAdornment: (
                 <InputAdornment>
