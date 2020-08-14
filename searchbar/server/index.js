@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const app = express();
 const port = 3001;
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'build')));
 app.use(cors());
 app.use(express.json());
 
