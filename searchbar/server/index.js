@@ -7,13 +7,13 @@ const mongoose = require('mongoose');
 const app = express();
 const port = 3001;
 
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, '../client/build')));
 app.use(cors());
 app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.send('Hello from the server!')
-});
+// app.get('/', (req, res) => {
+//   res.send('Hello from the server!')
+// });
 
 // should get all products
 app.get('/products', (req, res) => {

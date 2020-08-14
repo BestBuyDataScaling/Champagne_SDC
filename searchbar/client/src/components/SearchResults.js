@@ -6,7 +6,7 @@ const SearchResults = (props) => {
   return (
     <div>
       {searchResults.map(result => {
-        return <h5 key={result.uniqueID}>{result.name}</h5>
+        return <h5 key={result.uniqueID}>Product ID:{result.uniqueID} Name:{result.name}</h5>
       })}
     </div>
   )
