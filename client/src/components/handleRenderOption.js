@@ -7,7 +7,6 @@ const handleRenderOption = (option, { inputValue }) => {
   const parts = parse(option, matches);
 
   const highlightStyle = {
-    fontWeight: 900,
     color: 'blue'
   };
 
