@@ -75,32 +75,26 @@ const App = () => {
             </div>
           </div>
           <div className="upperRightContainer">
-            <ul>
-              <li>Credit Cards</li>
-              <li>Top Deals</li>
-              <li>Deal of the Day</li>
-              <li>Gift Cards</li>
-              <li>For Your Business</li>
-              <li>Back to School</li>
-            </ul>
+              <div>Credit Cards</div>
+              <div>Top Deals</div>
+              <div>Deal of the Day</div>
+              <div>Gift Cards</div>
+              <div>For Your Business</div>
+              <div>Back to School</div>
           </div>
       </div>
       <div className="lowerNav">
         <div className="lowerLeftNav">
-          <ul>
-            <li>Products</li>
-            <li>Brands</li>
-            <li>Deals</li>
-            <li>Services</li>
-          </ul>
+          <div>Products</div>
+          <div>Brands</div>
+          <div>Deals</div>
+          <div>Services</div>
         </div>
         <div className="lowerRightNav">
-          <ul>
-            <li><AccountCircle />  Account</li>
-            <li>Recently Viewed</li>
-            <li>Order Status</li>
-            <li>Saved Items</li>
-          </ul>
+          <div><AccountCircle />Account</div>
+          <div>Recently Viewed</div>
+          <div>Order Status</div>
+          <div>Saved Items</div>
         </div>
       </div>
       <SearchResults searchResults={searchResults} />
