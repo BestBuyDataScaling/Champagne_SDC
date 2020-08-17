@@ -14,7 +14,7 @@ const App = () => {
 
   //should pull mock data and store in state as an array
   useEffect(() => {
-    axios.get(`http://localhost:3001/products`)
+    axios.get(`/products`)
     .then(res => {
       setOptions(res.data)
     })
