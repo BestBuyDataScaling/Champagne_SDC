@@ -43,6 +43,7 @@ const App = () => {
   }
 
   // should return id of selected product name
+  // TODO: should send clicked ID to the product and reviews component
   const handleProductSelectChange = (e) => {
 
     let name = e.target.innerHTML
