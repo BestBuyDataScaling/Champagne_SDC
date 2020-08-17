@@ -21,13 +21,13 @@ const Searchbar = (props) => {
             {...params}
             placeholder="Search Best Buy"
             maxLength="50"
-            margin="normal"
+            margin="none"
             variant="outlined"
-            size="small"
+            size="medium"
             style={{
-              backgroundColor: "white"
+              backgroundColor: "white",
             }}
-            InputProps={{ ...params.InputProps, type: 'search',
+            InputProps={{ ...params.InputProps, type: 'search', style: {fontSize: 20},
               endAdornment: (
                 <InputAdornment>
                   <Button id="searchBtn" onClick={(e) => handleSearchSubmit(e)} >
