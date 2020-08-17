@@ -42,15 +42,14 @@ const App = () => {
       })
   }
 
-  const handleProductClick = (e) => {
-    e.preventDefault();
+  // should return id of selected product name
+  const handleProductSelectChange = (e) => {
 
-    let name = e.target.value
-    console.log(`event target value: ${name}`)
+    let name = e.target.innerHTML
 
     let product = options.filter(option => option.name === name)
 
-    return product[0].uniqueID;
+    console.log(product[0].uniqueID)
   }
 
   return (
@@ -60,7 +59,7 @@ const App = () => {
             <img id="logo" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/bby_logo-82846.png" alt="BestBuy logo" />
           </div>
           <div className="middleNav">
-            <Searchbar options={options} handleProductClick={handleProductClick} handleChange={handleChange} handleSearchSubmit={handleSearchSubmit} />
+            <Searchbar options={options} handleProductSelectChange={handleProductSelectChange} handleChange={handleChange} handleSearchSubmit={handleSearchSubmit} />
           </div>
           <div className="cartContainer">
             <Button id="cartBtn">
