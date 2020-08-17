@@ -33,7 +33,7 @@ const App = () => {
 
     let query = searchText
 
-    axios.get(`http://localhost:3001/products/${query}`)
+    axios.get(`/products/${query}`)
       .then(res => {
         setSearchResults(res.data);
       })
