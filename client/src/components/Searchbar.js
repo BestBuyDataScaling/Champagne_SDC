@@ -7,11 +7,11 @@ import { Button } from '@material-ui/core';
 import handleRenderOption from './handleRenderOption';
 
 const Searchbar = (props) => {
-  const { options, handleChange, handleSearchSubmit, handleProductClick } = props;
+  const { options, handleChange, handleSearchSubmit, handleProductSelectChange } = props;
   // console.log(props.options)
   return (
     <div className="searchbarContainer">
-      <Autocomplete
+      <Autocomplete onChange={(e) => handleProductSelectChange(e)}
         id="searchbar"
         options={options.map(option => option.name)}
         getOptionLabel={(option) => option}
