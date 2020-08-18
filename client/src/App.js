@@ -53,9 +53,9 @@ const App = () => {
     console.log(e.target.value)
     console.log(e.target.innerText)
 
-    let product = options.filter(option => option.name === name)
+    // let product = options.filter(option => option.name === name)
 
-    console.log(product[0].uniqueID)
+    // console.log(product[0].uniqueID)
   }
 
   return (
@@ -65,7 +65,7 @@ const App = () => {
             <img id="logo" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/bby_logo-82846.png" alt="BestBuy logo" />
           </div>
           <div className="middleNav">
-            <Searchbar options={options} handleProductSelectChange={handleProductSelect} handleChange={handleChange} handleSearchSubmit={handleSearchSubmit} />
+            <Searchbar options={options} handleProductSelect={handleProductSelect} handleChange={handleChange} handleSearchSubmit={handleSearchSubmit} />
           </div>
           <div className="middleRightNav">
             <div id="store">
