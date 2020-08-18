@@ -7,7 +7,7 @@ import { IconButton } from '@material-ui/core';
 import handleRenderOption from './handleRenderOption';
 
 const Searchbar = (props) => {
-  const { options, handleChange, handleSearchSubmit, handleProductSelectChange } = props;
+  const { options, handleChange, handleSearchSubmit, handleProductSelect } = props;
   // console.log(props.options)
   return (
     <div className="searchbarContainer">
