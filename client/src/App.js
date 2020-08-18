@@ -51,7 +51,7 @@ const App = () => {
     let name = e.target.value
     let product = options.filter(option => option.name === name)
 
-    if (!product) {
+    if (product.length === 0) {
       return
     } else {
       // TODO: should send clicked ID to the product and reviews component
