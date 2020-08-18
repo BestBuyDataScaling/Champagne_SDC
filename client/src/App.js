@@ -4,7 +4,7 @@ import SearchResults from './components/SearchResults';
 import { ShoppingCart } from '@material-ui/icons';
 import { Store } from '@material-ui/icons';
 import { AccountCircle } from '@material-ui/icons';
-import { Button } from '@material-ui/core';
+import { IconButton } from '@material-ui/core';
 import axios from 'axios';
 
 const App = () => {
@@ -62,16 +62,16 @@ const App = () => {
           <div className="middleNav">
             <Searchbar options={options} handleProductSelectChange={handleProductSelectChange} handleChange={handleChange} handleSearchSubmit={handleSearchSubmit} />
           </div>
-          <div className="cartContainer">
-            <Button id="cartBtn">
-              <ShoppingCart/>
-              <span className="cartLabel">Cart</span>
-            </Button>
-          </div>
-          <div className="storeContainer">
-            <div className="storeIcon">
-              <Store />
-              <span className="storeLabel">Mueller Airport</span>
+          <div className="middleRightNav">
+            <div id="store">
+              <IconButton color="inherit">
+                <Store id="storeBtn" />
+              </IconButton>HRATX50
+            </div>
+            <div id="cart">
+              <IconButton color="inherit">
+                <ShoppingCart id="cartBtn"/>
+              </IconButton>Cart
             </div>
           </div>
           <div className="upperRightContainer">
@@ -91,7 +91,11 @@ const App = () => {
           <div>Services</div>
         </div>
         <div className="lowerRightNav">
-          <div><AccountCircle />Account</div>
+          <div>
+            <IconButton color="inherit">
+              <AccountCircle />
+            </IconButton>Account
+          </div>
           <div>Recently Viewed</div>
           <div>Order Status</div>
           <div>Saved Items</div>

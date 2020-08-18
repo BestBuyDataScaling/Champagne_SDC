@@ -3,7 +3,7 @@ import { TextField } from '@material-ui/core';
 import { Autocomplete } from '@material-ui/lab';
 import { InputAdornment } from '@material-ui/core';
 import { Search } from '@material-ui/icons';
-import { Button } from '@material-ui/core';
+import { IconButton } from '@material-ui/core';
 import handleRenderOption from './handleRenderOption';
 
 const Searchbar = (props) => {
@@ -21,18 +21,18 @@ const Searchbar = (props) => {
             {...params}
             placeholder="Search Best Buy"
             maxLength="50"
-            margin="none"
+            margin="normal"
             variant="outlined"
-            size="medium"
+            size="small"
             style={{
               backgroundColor: "white",
             }}
-            InputProps={{ ...params.InputProps, type: 'search', style: {fontSize: 20},
+            InputProps={{ ...params.InputProps, type: 'search', style: {fontSize: 14},
               endAdornment: (
                 <InputAdornment>
-                  <Button id="searchBtn" onClick={(e) => handleSearchSubmit(e)} >
+                  <IconButton id="searchBtn" onClick={(e) => handleSearchSubmit(e)} >
                     <Search />
-                  </Button>
+                  </IconButton>
                 </InputAdornment> )
             }}
           />
