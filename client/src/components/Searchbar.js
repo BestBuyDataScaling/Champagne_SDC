@@ -11,7 +11,7 @@ const Searchbar = (props) => {
   // console.log(props.options)
   return (
     <div className="searchbarContainer">
-      <Autocomplete onChange={(e) => handleProductSelectChange(e)}
+      <Autocomplete onSelect={(e) => handleProductSelect(e)}
         id="searchbar"
         options={options.map(option => option.name)}
         getOptionLabel={(option) => option}

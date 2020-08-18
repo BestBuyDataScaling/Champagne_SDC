@@ -44,9 +44,12 @@ const App = () => {
 
   // should return id of selected product name
   // TODO: should send clicked ID to the product and reviews component
-  const handleProductSelectChange = (e) => {
+  const handleProductSelect = (e) => {
 
     let name = e.target.innerHTML
+    console.log(e)
+    console.log(e.target)
+    console.log(name)
 
     let product = options.filter(option => option.name === name)
 
@@ -60,7 +63,7 @@ const App = () => {
             <img id="logo" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/bby_logo-82846.png" alt="BestBuy logo" />
           </div>
           <div className="middleNav">
-            <Searchbar options={options} handleProductSelectChange={handleProductSelectChange} handleChange={handleChange} handleSearchSubmit={handleSearchSubmit} />
+            <Searchbar options={options} handleProductSelectChange={handleProductSelect} handleChange={handleChange} handleSearchSubmit={handleSearchSubmit} />
           </div>
           <div className="middleRightNav">
             <div id="store">
