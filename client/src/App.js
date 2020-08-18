@@ -43,19 +43,20 @@ const App = () => {
   }
 
   // should return id of selected product name
-  // TODO: should send clicked ID to the product and reviews component
   const handleProductSelect = (e) => {
+    if (!e.target.value) {
+      return
+    }
 
-    let name = e.target.innerHTML
-    console.log(e)
-    console.log(e.target)
-    console.log(name)
-    console.log(e.target.value)
-    console.log(e.target.innerText)
+    let name = e.target.value
+    let product = options.filter(option => option.name === name)
 
-    // let product = options.filter(option => option.name === name)
-
-    // console.log(product[0].uniqueID)
+    if (!prodcut) {
+      return
+    } else {
+      // TODO: should send clicked ID to the product and reviews component
+      console.log(product[0].uniqueID)
+    }
   }
 
   return (
