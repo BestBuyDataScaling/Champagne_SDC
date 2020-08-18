@@ -50,6 +50,8 @@ const App = () => {
     console.log(e)
     console.log(e.target)
     console.log(name)
+    console.log(e.target.value)
+    console.log(e.target.innerText)
 
     let product = options.filter(option => option.name === name)
 
