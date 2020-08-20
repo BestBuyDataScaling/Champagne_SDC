@@ -1,3 +1,4 @@
+const mongoose = require('mongoose');
 const mock = require('./mockData');
 mongoose.connect('mongodb://localhost/bestbuy', {useNewUrlParser: true});
 
