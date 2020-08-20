@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 // should get all products
-app.get('http://ec2-3-15-179-73.us-east-2.compute.amazonaws.com/products', (req, res) => {
+app.get('/products', (req, res) => {
   db.Product.find({}, (err, results) => {
     if (err) {
       console.log(`Error retrieving all products ${err}`);
@@ -23,7 +23,7 @@ app.get('http://ec2-3-15-179-73.us-east-2.compute.amazonaws.com/products', (req,
 })
 
 // should get relevant items based on client query
-app.get('http://ec2-3-15-179-73.us-east-2.compute.amazonaws.com/products/:query', (req, res) => {
+app.get('/products/:query', (req, res) => {
   let query = req.params.query;
   // console.log(query);
   db.Product.find({ $text: { $search: query } } ,
