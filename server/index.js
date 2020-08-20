@@ -4,16 +4,12 @@ const cors = require('cors');
 const db = require('../database/index');
 const mongoose = require('mongoose');
 
+const PORT = 3001;
 const app = express();
-const port = 3001;
 
-app.use(express.static(path.join(__dirname, '../client/build')));
-app.use(cors());
+app.use(express.static(path.join(__dirname, '../client/public')))
 app.use(express.json());
-
-// app.get('/', (req, res) => {
-//   res.send('Hello from the server!')
-// });
+app.use(cors());
 
 // should get all products
 app.get('/products', (req, res) => {
@@ -42,6 +38,8 @@ app.get('/products/:query', (req, res) => {
   });
 })
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+app.listen(PORT, () => {
+  console.log(`Server listening at ${PORT}`);
 });
+
+
