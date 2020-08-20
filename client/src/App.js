@@ -5,7 +5,7 @@ import { ShoppingCart } from '@material-ui/icons';
 import { Store } from '@material-ui/icons';
 import { AccountCircle } from '@material-ui/icons';
 import { IconButton } from '@material-ui/core';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import axios from 'axios';
 
 const App = () => {
@@ -109,7 +109,7 @@ const App = () => {
         </div>
       </div>
       <SearchResults searchResults={searchResults} />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
