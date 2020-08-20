@@ -5,6 +5,7 @@ import { ShoppingCart } from '@material-ui/icons';
 import { Store } from '@material-ui/icons';
 import { AccountCircle } from '@material-ui/icons';
 import { IconButton } from '@material-ui/core';
+import Footer from './components/Footer';
 import axios from 'axios';
 
 const App = () => {
@@ -15,12 +16,12 @@ const App = () => {
   //should pull mock data and store in state as an array
   useEffect(() => {
     axios.get(`/products`)
-    .then(res => {
-      setOptions(res.data)
-    })
-    .catch(err => {
-      console.log(`Axios error getting all products: ${err}`)
-    })
+      .then(res => {
+        setOptions(res.data)
+      })
+      .catch(err => {
+        console.log(`Axios error getting all products: ${err}`)
+      })
   }, []);
 
   const handleChange = (e) => {
@@ -31,7 +32,7 @@ const App = () => {
   const handleSearchSubmit = (e) => {
     e.preventDefault();
 
-    let query = searchText
+    let query = searchText;
 
     axios.get(`/products/${query}`)
       .then(res => {
@@ -62,32 +63,32 @@ const App = () => {
   return (
     <div>
       <div className="header">
-          <div className="logo">
-            <img id="logo" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/bby_logo-82846.png" alt="BestBuy logo" />
+        <div className="logo">
+          <img id="logo" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/bby_logo-82846.png" alt="BestBuy logo" />
+        </div>
+        <div className="middleNav">
+          <Searchbar options={options} handleProductSelect={handleProductSelect} handleChange={handleChange} handleSearchSubmit={handleSearchSubmit} />
+        </div>
+        <div className="middleRightNav">
+          <div id="store">
+            <IconButton color="inherit">
+              <Store id="storeBtn" />
+            </IconButton>HRATX50
           </div>
-          <div className="middleNav">
-            <Searchbar options={options} handleProductSelect={handleProductSelect} handleChange={handleChange} handleSearchSubmit={handleSearchSubmit} />
+          <div id="cart">
+            <IconButton color="inherit">
+              <ShoppingCart id="cartBtn"/>
+            </IconButton>Cart
           </div>
-          <div className="middleRightNav">
-            <div id="store">
-              <IconButton color="inherit">
-                <Store id="storeBtn" />
-              </IconButton>HRATX50
-            </div>
-            <div id="cart">
-              <IconButton color="inherit">
-                <ShoppingCart id="cartBtn"/>
-              </IconButton>Cart
-            </div>
-          </div>
-          <div className="upperRightContainer">
-              <div>Credit Cards</div>
-              <div>Top Deals</div>
-              <div>Deal of the Day</div>
-              <div>Gift Cards</div>
-              <div>For Your Business</div>
-              <div>Back to School</div>
-          </div>
+        </div>
+        <div className="upperRightContainer">
+          <div>Credit Cards</div>
+          <div>Top Deals</div>
+          <div>Deal of the Day</div>
+          <div>Gift Cards</div>
+          <div>For Your Business</div>
+          <div>Back to School</div>
+        </div>
       </div>
       <div className="lowerNav">
         <div className="lowerLeftNav">
@@ -108,6 +109,7 @@ const App = () => {
         </div>
       </div>
       <SearchResults searchResults={searchResults} />
+      <Footer />
     </div>
   )
 }
