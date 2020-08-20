@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon server/index.js",
     "dev": "webpack -d --watch",
-    "build": "webpack -p"
+    "build": "webpack -p --progress"
   },
   "author": "",
   "license": "ISC",
