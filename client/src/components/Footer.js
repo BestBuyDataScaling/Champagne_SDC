@@ -7,7 +7,7 @@ import { Pinterest } from '@material-ui/icons';
 import { Smartphone } from '@material-ui/icons';
 
 
-const Footer = (props) => {
+const Footer = () => {
   return (
     <div className="db_footerContainer">
       <div className="db_footer-bar">
