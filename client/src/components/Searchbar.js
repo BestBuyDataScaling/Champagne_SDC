@@ -29,7 +29,7 @@ const Searchbar = (props) => {
             style={{
               backgroundColor: "white",
             }}
-            InputProps={{ ...params.InputProps, type: 'search', style: { fontSize: 14 },
+            InputProps={{ ...params.InputProps, type: 'search',
               endAdornment: (
                 <InputAdornment>
                   <IconButton id="searchBtn" onClick={(e) => handleSearchSubmit(e)} >
