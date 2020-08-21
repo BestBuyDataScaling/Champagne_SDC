@@ -55,7 +55,7 @@ const App = () => {
       return
     } else {
       // updates divs with product id for product and reviews components
-      document.getElementById('Walker').className = product[0].uniqueID;
+      document.getElementById('searchbar_app').className = product[0].uniqueID;
       console.log(product[0].uniqueID);
     }
   }
