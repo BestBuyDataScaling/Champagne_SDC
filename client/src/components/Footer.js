@@ -13,8 +13,10 @@ const Footer = () => {
       <div className="db_footer-bar">
         <div className="db_footerBarContents">
           <div>Get the latest deals and more.</div>
-          <input type="text" placeholder="Enter email address"/>
-          <button>Sign Up</button>
+          <div className="db_emailInput">
+            <input type="text" placeholder="Enter email address"/>
+            <button>Sign Up</button>
+          </div>
           <div className="db_mobileApp">
             <IconButton >
               <Smartphone />

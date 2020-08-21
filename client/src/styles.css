@@ -126,6 +126,8 @@
   display: flex;
   align-items: center;
   color: #fff200;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .db_lowerCenterFooter {
@@ -198,4 +200,8 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
+}
+
+.db_mobileApp {
+  color: #fff200;
 }
