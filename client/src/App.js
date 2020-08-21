@@ -55,6 +55,7 @@ const App = () => {
       return
     } else {
       // TODO: should send clicked ID to the product and reviews component
+      document.getElementById('Walker').className = product[0].uniqueID;
       console.log(product[0].uniqueID)
     }
   }
