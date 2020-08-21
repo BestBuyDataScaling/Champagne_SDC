@@ -53,7 +53,7 @@ const Footer = () => {
                 </ul>
                 <h3 className="db_colHeading
                 ">Lease to Own</h3>
-                <ul className="footerList">
+                <ul className="db_footerList">
                   <li>Apply Now</li>
                 </ul>
             </div>
