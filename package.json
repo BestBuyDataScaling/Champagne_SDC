@@ -6,30 +6,36 @@
   "scripts": {
     "start": "nodemon server/index.js",
     "dev": "webpack -d --watch",
-    "build": "webpack -p --progress"
+    "build": "webpack -p --progress",
+    "lint": "eslint"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "^4.0.0-alpha.56",
     "autosuggest-highlight": "^3.1.1",
     "axios": "^0.19.2",
+    "babel-loader": "^8.1.0",
     "cors": "^2.8.5",
+    "css-loader": "^4.2.1",
+    "eslint-config-airbnb": "^18.2.0",
     "express": "^4.17.1",
     "mongodb": "^3.6.0",
     "mongoose": "^5.10.0",
     "nodemon": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "@babel/core": "^7.11.1",
-    "@babel/preset-env": "^7.11.0",
-    "@babel/preset-react": "^7.10.4",
-    "babel-loader": "^8.1.0",
-    "css-loader": "^4.2.1",
     "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
+  },
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-plugin-react": "^7.20.6"
   }
 }

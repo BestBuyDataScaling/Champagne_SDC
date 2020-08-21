@@ -48,15 +48,15 @@ const App = () => {
       return
     }
 
-    let name = e.target.value
-    let product = options.filter(option => option.name === name)
+    let name = e.target.value;
+    let product = options.filter(option => option.name === name);
 
     if (product.length === 0) {
       return
     } else {
-      // TODO: should send clicked ID to the product and reviews component
+      // updates divs with product id for product and reviews components
       document.getElementById('Walker').className = product[0].uniqueID;
-      console.log(product[0].uniqueID)
+      console.log(product[0].uniqueID);
     }
   }
 

@@ -2,6 +2,7 @@ import React from "react";
 import parse from "autosuggest-highlight/parse";
 import match from "autosuggest-highlight/match";
 
+// highlights options which match user input in searchbar
 const handleRenderOption = (option, { inputValue }) => {
   const matches = match(option, inputValue);
   const parts = parse(option, matches);

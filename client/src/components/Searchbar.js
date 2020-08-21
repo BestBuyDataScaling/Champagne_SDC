@@ -8,17 +8,19 @@ import handleRenderOption from './handleRenderOption';
 
 const Searchbar = (props) => {
   const { options, handleChange, handleSearchSubmit, handleProductSelect } = props;
-  // console.log(props.options)
+
   return (
     <div className="searchbarContainer">
+      {/* materail ui autocomplete filters options which match user input */}
       <Autocomplete onSelect={(e) => handleProductSelect(e)}
         id="searchbar"
         options={options.map(option => option.name)}
         getOptionLabel={(option) => option}
         renderInput={(params) => (
-          <TextField
-          onChange={(e) => handleChange(e)} id="searchText"
-            {...params}
+          // text field material ui component is the input for the searchbar
+          <TextField {...params}
+            // handleChange event for user input into searchbar
+            onChange={(e) => handleChange(e)} id="searchText"
             placeholder="Search Best Buy"
             maxLength="50"
             margin="normal"
@@ -27,7 +29,7 @@ const Searchbar = (props) => {
             style={{
               backgroundColor: "white",
             }}
-            InputProps={{ ...params.InputProps, type: 'search', style: {fontSize: 14},
+            InputProps={{ ...params.InputProps, type: 'search', style: { fontSize: 14 },
               endAdornment: (
                 <InputAdornment>
                   <IconButton id="searchBtn" onClick={(e) => handleSearchSubmit(e)} >
@@ -37,6 +39,7 @@ const Searchbar = (props) => {
             }}
           />
         )}
+        // handle highlighting of options which match user input
         renderOption={handleRenderOption}
       />
     </div>

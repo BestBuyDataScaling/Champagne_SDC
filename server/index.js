@@ -25,7 +25,6 @@ app.get('/products', (req, res) => {
 // should get relevant items based on client query
 app.get('/products/:query', (req, res) => {
   let query = req.params.query;
-  // console.log(query);
   db.Product.find({ $text: { $search: query } } ,
   (err, results) => {
     if (err) {
