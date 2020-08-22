@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Searchbar from './components/Searchbar';
 import SearchResults from './components/SearchResults';
 import { ShoppingCart, Store, AccountCircle, ExpandMore } from '@material-ui/icons';
-import { IconButton, Accordion, AccordionDetails, AccordionSummary, Typography } from '@material-ui/core';
+import { IconButton } from '@material-ui/core';
 import axios from 'axios';
 
 const App = () => {
