@@ -1,11 +1,6 @@
 import React from 'react';
-import { IconButton } from '@material-ui/core';
-import { Facebook } from '@material-ui/icons';
-import { Twitter } from '@material-ui/icons';
-import { Instagram } from '@material-ui/icons';
-import { Pinterest } from '@material-ui/icons';
-import { Smartphone } from '@material-ui/icons';
-import { TextField } from '@material-ui/core';
+import { IconButton, TextField } from '@material-ui/core';
+import { Facebook, Twitter, Instagram, Pinterest, Smartphone } from '@material-ui/icons';
 
 
 const Footer = () => {
