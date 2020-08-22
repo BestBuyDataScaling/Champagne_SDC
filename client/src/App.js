@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Searchbar from './components/Searchbar';
 import SearchResults from './components/SearchResults';
-import { ShoppingCart } from '@material-ui/icons';
-import { Store } from '@material-ui/icons';
-import { AccountCircle } from '@material-ui/icons';
-import { IconButton } from '@material-ui/core';
+import { ShoppingCart, Store, AccountCircle, ExpandMore } from '@material-ui/icons';
+import { IconButton, Accordion, AccordionDetails, AccordionSummary, Typography } from '@material-ui/core';
 import axios from 'axios';
 
 const App = () => {
@@ -92,19 +90,19 @@ const App = () => {
       </div>
       <div className="lowerNav">
         <div className="lowerLeftNav">
-          <div>Products</div>
-          <div>Brands</div>
-          <div>Deals</div>
-          <div>Services</div>
+          <div>Products<ExpandMore style={{ fontSize: 15 }} /></div>
+          <div>Brands<ExpandMore style={{ fontSize: 15 }} /></div>
+          <div>Deals<ExpandMore style={{ fontSize: 15 }} /></div>
+          <div>Services<ExpandMore style={{ fontSize: 15 }} /></div>
         </div>
         <div className="lowerRightNav">
           <div>
             <IconButton color="inherit">
               <AccountCircle />
-            </IconButton>Account
+            </IconButton>Account<ExpandMore style={{ fontSize: 13 }} />
           </div>
-          <div>Recently Viewed</div>
-          <div>Order Status</div>
+          <div>Recently Viewed<ExpandMore style={{ fontSize: 13 }} /></div>
+          <div>Order Status<ExpandMore style={{ fontSize: 13 }} /></div>
           <div>Saved Items</div>
         </div>
       </div>
