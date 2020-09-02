@@ -1,3 +1,5 @@
 .DS_store
 node_modules
 .eslintrc.js
+database/data.csv
+database/split_data.csv

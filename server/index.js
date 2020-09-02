@@ -3,6 +3,8 @@ const path = require('path');
 const cors = require('cors');
 const db = require('../database/index');
 const { saveToDatabase } = require('../database/index');
+var MongoClient = require('mongodb').MongoClient;
+const newDB = require('../database/newIndex')
 
 const PORT = 3001;
 const app = express();
@@ -27,15 +29,41 @@ app.get('/products', (req, res) => {
 app.get('/products/:query', (req, res) => {
   let query = req.params.query;
   db.Product.find({ $text: { $search: query } },
+
     (err, results) => {
       if (err) {
         console.log(`Error retrieving all products ${err}`);
       } else {
-        //console.log(`Success getting related products from db`)
+        console.log(`Success getting related products from db`)
         res.send(results);
       }
     });
 })
+
+app.get('/products/:company/:material/:product/:color', (req, res) => {
+  let company = req.params.company;
+  let material = req.params.material;
+  let product = req.params.product;
+  let color = req.params.color;
+
+  newDB.getFunction(company, material, product, color, (err, results) => {
+    if (err) {
+      console.log("error with new DB function")
+    } else {
+      res.send(results)
+    }
+  })
+});
+
+// db.data.find({ company: company, material: material, color: color, product: product },
+//   (err, results) => {
+//     if (err) {
+//       console.log("Error with split_data db");
+//     } else {
+//       res.send(results);
+//     }
+//   });
+//});
 
 // creates new item
 app.post('/products/:id/:name', (req, res) => {

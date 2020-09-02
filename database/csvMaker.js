@@ -22,8 +22,8 @@ const { data } = require('./mockData');
 
 // dataGen();
 // dataGen();
-const writeProducts = fs.createWriteStream('./data.csv');
-writeProducts.write('id,name\n', 'utf8');
+const writeProducts = fs.createWriteStream('./split_data.csv');
+writeProducts.write('id,company,material,color,product\n', 'utf8');
 
 function writeTenMillionProducts(writer, encoding, callback) {
   let i = 10000000;
@@ -33,8 +33,11 @@ function writeTenMillionProducts(writer, encoding, callback) {
     do {
       i -= 1;
       id += 1;
-      const name = `${faker.commerce.productAdjective()} ${faker.commerce.productMaterial()} ${faker.commerce.product()}`
-      const data = `${id},${name}\n`;
+      const company = faker.name.lastName()
+      const material = faker.commerce.productMaterial()
+      const color = faker.commerce.color()
+      const product = faker.commerce.product()
+      const data = `${id},${company},${material},${color},${product}\n`;
       if (i === 0) {
         writer.write(data, encoding, callback);
       } else {

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const mock = require('./mockData');
-mongoose.connect('mongodb://localhost/bestbuy', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost/SDC', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const db = mongoose.connection;
 
