@@ -5,23 +5,6 @@ const faker = require('faker');
 const { data } = require('./mockData');
 
 
-// var counter = 1;
-
-// const dataGen = () => {
-//   writer.pipe(fs.createWriteStream('./data.csv'));
-//   for (var i = 0; i <= 1000000; i++) {
-//     writer.write({
-//       id: counter++,
-//       name: `${faker.commerce.productAdjective()} ${faker.commerce.productMaterial()} ${faker.commerce.product()}`
-//     })
-//   }
-
-//   writer.end();
-//   console.log('done')
-// }
-
-// dataGen();
-// dataGen();
 const writeProducts = fs.createWriteStream('./split_data.csv');
 writeProducts.write('id,company,material,color,product\n', 'utf8');
 
@@ -56,6 +39,6 @@ function writeTenMillionProducts(writer, encoding, callback) {
 }
 
 
-writeTenMillionProducts(writeProducts, 'utf-8', () => {
-  writeProducts.end();
-});
+//writeTenMillionProducts(writeProducts, 'utf-8', () => {
+//   writeProducts.end();
+// });
