@@ -3,9 +3,9 @@ import http from "k6/http";
 
 export const options = {
   stages: [
-    { duration: "60s", target: 5 },
-    // { duration: "3m", target: 5 },
-    // { duration: "1m", target: 0 },
+    { duration: "60s", target: 250 },
+    { duration: "3m", target: 2000 },
+    { duration: "1m", target: 250 },
   ],
   // ext: {
   //   loadimpact: {

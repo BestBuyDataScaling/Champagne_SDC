@@ -9,7 +9,7 @@ exports.config = {
   /**
    * Array of application names.
    */
-  app_name: ['Champagne SDC'],
+  app_name: ['Champagne SDC 2'],
   /**
    * Your New Relic license key.
    */
