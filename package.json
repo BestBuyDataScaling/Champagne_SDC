@@ -4,11 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
-    "start": "nodemon server/index.js",
-=======
     "start": "nodemon server/ChampagneIndex.js",
->>>>>>> de088cdb11db0e03075d576937e0227fa49184ac
     "dev": "webpack -d --watch",
     "build": "webpack -p --progress",
     "lint": "eslint"
@@ -27,12 +23,6 @@
     "babel-loader": "^8.1.0",
     "cors": "^2.8.5",
     "css-loader": "^4.2.1",
-<<<<<<< HEAD
-    "eslint-config-airbnb": "^18.2.0",
-    "express": "^4.17.1",
-    "mongodb": "^3.6.0",
-    "mongoose": "^5.10.0",
-=======
     "csv-write-stream": "^2.0.0",
     "eslint-config-airbnb": "^18.2.0",
     "express": "^4.17.1",
@@ -40,7 +30,6 @@
     "mongodb": "^3.6.0",
     "mongoose": "^5.10.0",
     "newrelic": "^6.13.0",
->>>>>>> de088cdb11db0e03075d576937e0227fa49184ac
     "nodemon": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

@@ -2,13 +2,10 @@ const express = require('express');
 const path = require('path');
 const cors = require('cors');
 const db = require('../database/index');
-<<<<<<< HEAD
-=======
 const { saveToDatabase } = require('../database/index');
 var MongoClient = require('mongodb').MongoClient;
 const newDB = require('../database/newIndex');
 require('newrelic');
->>>>>>> de088cdb11db0e03075d576937e0227fa49184ac
 
 const PORT = 3001;
 const app = express();
@@ -32,22 +29,6 @@ app.get('/products', (req, res) => {
 // should get relevant items based on client query
 app.get('/products/:query', (req, res) => {
   let query = req.params.query;
-<<<<<<< HEAD
-  db.Product.find({ $text: { $search: query } } ,
-  (err, results) => {
-    if (err) {
-      console.log(`Error retrieving all products ${err}`);
-    } else {
-      console.log(`Success getting related products from db`)
-      res.send(results);
-    }
-  });
-})
-
-app.listen(PORT, () => {
-  console.log(`Server listening at ${PORT}`);
-});
-=======
   db.Product.find({ $text: { $search: query } },
 
     (err, results) => {
@@ -132,6 +113,5 @@ app.delete('/products/:id', (req, res) => {
 // app.listen(PORT, () => {
 //   console.log(`Server listening at ${PORT}`);
 // });
->>>>>>> de088cdb11db0e03075d576937e0227fa49184ac
 
 
