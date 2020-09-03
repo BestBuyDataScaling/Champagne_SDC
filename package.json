@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server/index.js",
+    "start": "nodemon server/ChampagneIndex.js",
     "dev": "webpack -d --watch",
     "build": "webpack -p --progress",
     "lint": "eslint"
@@ -29,6 +29,7 @@
     "faker": "^5.1.0",
     "mongodb": "^3.6.0",
     "mongoose": "^5.10.0",
+    "newrelic": "^6.13.0",
     "nodemon": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

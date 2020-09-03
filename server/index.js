@@ -4,7 +4,8 @@ const cors = require('cors');
 const db = require('../database/index');
 const { saveToDatabase } = require('../database/index');
 var MongoClient = require('mongodb').MongoClient;
-const newDB = require('../database/newIndex')
+const newDB = require('../database/newIndex');
+require('newrelic');
 
 const PORT = 3001;
 const app = express();
@@ -109,8 +110,8 @@ app.delete('/products/:id', (req, res) => {
 })
 
 
-app.listen(PORT, () => {
-  console.log(`Server listening at ${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Server listening at ${PORT}`);
+// });
 
 
